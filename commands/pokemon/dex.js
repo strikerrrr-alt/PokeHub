@@ -4,7 +4,7 @@ const { get } = require('snekfetch');
 class DexCommand extends Command {
     constructor() {
         super('dex', {
-                category: 'Main',
+                category: 'pokemon',
                 aliases: ['pokedex', 'd'],
                 typing: true,
                 args: [
