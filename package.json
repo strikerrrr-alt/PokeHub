@@ -1,0 +1,25 @@
+{
+  "name": "pokehub",
+  "version": "1.0.0",
+  "description": "Your go to for everything Pokemon related!",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node main.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Strikerrr/PokeHub.git"
+  },
+  "author": "Striker <zzstrikerzzyt@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Strikerrr/PokeHub/issues"
+  },
+  "homepage": "https://github.com/Strikerrr/PokeHub#readme",
+  "dependencies": {
+    "discord-akairo": "github:discord-akairo/discord-akairo",
+    "discord.js": "github:discordjs/discord.js",
+    "superagent": "^5.1.0"
+  }
+}
