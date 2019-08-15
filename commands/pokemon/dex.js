@@ -22,7 +22,7 @@ class DexCommand extends Command {
             pokemonNameLower = pokemonName.toLowerCase();
 
         const pokemonObject = await get(`https://pokeapi.co/api/v2/pokemon/${pokemonName}`);
-        console.log(pokemonObject);
+        console.log(pokemonObject.body);
         msg.reply('Placeholder');
 
     }
