@@ -20,6 +20,7 @@
   "dependencies": {
     "discord-akairo": "github:discord-akairo/discord-akairo",
     "discord.js": "github:discordjs/discord.js",
+    "snekfetch": "^4.0.4",
     "superagent": "^5.1.0"
   }
 }

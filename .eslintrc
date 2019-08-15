@@ -1,0 +1,45 @@
+{
+    "extends": [
+        "eslint:recommended"
+    ],
+    "env": {
+        "node": true,
+        "es6": true
+    },
+    "parserOptions": {
+        "ecmaVersion": 2017
+    },
+    "rules": {
+        "comma-spacing": "error",
+        "comma-style": "error",
+        "comma-dangle": "off",
+        "dot-location": ["error", "property"],
+        "handle-callback-err": "off",
+        "max-nested-callbacks": ["error", {
+            "max": 4
+        }],
+        "max-statements-per-line": ["error", {
+            "max": 2
+        }],
+        "indent": "off",
+        "eol-last": "off",
+        "no-console": "off",
+        "no-floating-decimal": "error",
+        "no-inline-comments": "error",
+        "no-multi-spaces": "error",
+        "no-multiple-empty-lines": ["error", {
+            "max": 2,
+            "maxEOF": 1,
+            "maxBOF": 0
+        }],
+        "no-trailing-spaces": "warn",
+        "no-unused-vars": "off",
+        "object-curly-spacing": ["error", "always"],
+        "prefer-const": "error",
+        "quotes": ["error", "single"],
+        "semi": ["error", "always"],
+        "space-before-blocks": "error",
+        "space-in-parens": "error",
+        "yoda": "error"
+    }
+}

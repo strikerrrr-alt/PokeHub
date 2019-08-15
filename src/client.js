@@ -3,7 +3,8 @@ const { AkairoClient, CommandHandler, ListenerHandler } = require('discord-akair
 class Client extends AkairoClient {
     constructor() {
         super({
-            ownerID: ['215509157837537280']
+            ownerID: ['215509157837537280'],
+            automateCategories: true
         });
 
         this.commandHandler = new CommandHandler(this, {
