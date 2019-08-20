@@ -5,7 +5,7 @@ class DexCommand extends Command {
     constructor() {
         super('dex', {
                 category: 'pokemon',
-                aliases: ['pokedex', 'd'],
+                aliases: ['pokedex', 'd', 'dex'],
                 typing: true,
                 args: [
                     {
