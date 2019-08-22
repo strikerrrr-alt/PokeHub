@@ -45,7 +45,7 @@ class DexCommand extends Command {
             .setAuthor('PokéHub', this.client.user.avatarURL({ size: 1024 }), 'https://discordapp.com/oauth2/authorize?client_id=611554251918934016&permissions=313408&scope=bot')
             .setColor('#ee1515')
             .setFooter(`Data fetched in ${fetchTime}ms.`)
-            .setImage(pokemonDexEmbed.sprites.front_default)
+            .setImage(pokemonObject.sprites.front_default)
             .setTitle(pokemonNameEmbed);
 
         // Adding Pokemon Type
