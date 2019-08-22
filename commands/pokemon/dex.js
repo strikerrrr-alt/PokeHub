@@ -31,7 +31,8 @@ class DexCommand extends Command {
         const pokemonNameEmbed = pokemonNameLower.charAt(0).toUpperCase() + pokemonNameLower.slice(1);
 
         // Fetch Pokemon object
-        const response = await get(`https://pokeapi.co/api/v2/pokemon/${pokemonName}`);
+        let response = '';
+        response = await get(`https://pokeapi.co/api/v2/pokemon/${pokemonName}`);
         const pokemonObject = response.body;
 
         // Other fetch time related variable
@@ -78,7 +79,23 @@ class DexCommand extends Command {
         if (abilityOne.name && !abilityTwo.name &&!abilityThree.name) pokemonDexEmbed.addField('Abilities', abilityOne.name, true);
         else if (abilityOne.name && abilityTwo.name && !abilityThree.name) pokemonDexEmbed.addField('Abilities', `${abilityOne.name}, ${abilityTwo.name}`, true);
         else if (abilityOne.name && abilityTwo.name && abilityThree.name) pokemonDexEmbed.addField('Abilities', `${abilityOne.name}, ${abilityTwo.name}, ${abilityThree.name}`, true);
+
         // Adding evolutionary line
+        response = await get(`https://pokeapi.co/api/v2/pokemon-species/${pokemonName}`);
+        const pokemonSpeciesObject = response.body;
+
+        response = await get(pokemonSpeciesObject.evolution_chain.url);
+        const pokemonEvochainObject = response.body;
+
+        let [firstEvo, secondEvo, thirdEvo] = ['', '', ''];
+
+        if (pokemonEvochainObject.chain.species.name) firstEvo = pokemonEvochainObject.chain.species.name;
+        if (pokemonEvochainObject.chain.evolves_to[0].species.name) secondEvo = pokemonEvochainObject.chain.evolves_to[0].species.name;
+        if (pokemonEvochainObject.chain.evolves_to[0].evolves_to[0].species.name) thirdEvo = pokemonEvochainObject.chain.evolves_to[0].evolves_to[0].species.name;
+
+        const evolutionString = `**${firstEvo}** >> **${secondEvo}** >> **${thirdEvo}**`;
+
+        pokemonDexEmbed.addField('Evolution Chain', evolutionString, true);
 
         // Send Embed
         msg.channel.send(pokemonDexEmbed);
