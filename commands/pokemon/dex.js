@@ -75,8 +75,9 @@ class DexCommand extends Command {
         else if (abilityTwo.is_hidden == true) abilityTwo.name == `*${abilityTwo.name}*`;
         else if (abilityThree.is_hidden == true) abilityThree.name == `*${abilityThree.name}*`;
 
-        pokemonDexEmbed.addField('Abilities', `${abilityOne.name}, ${abilityTwo.name}, ${abilityThree.name}`, true);
-
+        if (abilityOne.name && !abilityTwo.name &&!abilityThree.name) pokemonDexEmbed.addField('Abilities', abilityOne.name, true);
+        else if (abilityOne.name && abilityTwo.name && !abilityThree.name) pokemonDexEmbed.addField('Abilities', `${abilityOne.name}, ${abilityTwo.name}`, true);
+        else if (abilityOne.name && abilityTwo.name && abilityThree.name) pokemonDexEmbed.addField('Abilities', `${abilityOne.name}, ${abilityTwo.name}, ${abilityThree.name}`, true);
         // Adding evolutionary line
 
         // Send Embed
