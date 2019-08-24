@@ -2,6 +2,10 @@
 const { Command } = require('discord-akairo');
 const { get } = require('snekfetch');
 
+const captialiseFirstLetter = (str) => {
+    return str.charAt(0).toUpperCase() + str.slice(1);
+};
+
 // Create main command class
 class DexCommand extends Command {
     constructor() {
@@ -80,22 +84,26 @@ class DexCommand extends Command {
         else if (abilityOne.name && abilityTwo.name && !abilityThree.name) pokemonDexEmbed.addField('Abilities', `${abilityOne.name}, ${abilityTwo.name}`, true);
         else if (abilityOne.name && abilityTwo.name && abilityThree.name) pokemonDexEmbed.addField('Abilities', `${abilityOne.name}, ${abilityTwo.name}, ${abilityThree.name}`, true);
 
-        // Adding evolutionary line
+
+        // Adding evolutions
         response = await get(`https://pokeapi.co/api/v2/pokemon-species/${pokemonName}`);
         const pokemonSpeciesObject = response.body;
 
         response = await get(pokemonSpeciesObject.evolution_chain.url);
         const pokemonEvochainObject = response.body;
 
-        let [firstEvo, secondEvo, thirdEvo] = ['', '', ''];
+        let [evolvesFrom, evolvesTo] = ['', ''];
 
-        if (pokemonEvochainObject.chain.species.name) firstEvo = pokemonEvochainObject.chain.species.name;
-        if (pokemonEvochainObject.chain.evolves_to[0].species.name) secondEvo = pokemonEvochainObject.chain.evolves_to[0].species.name;
-        if (pokemonEvochainObject.chain.evolves_to[0].evolves_to[0].species.name) thirdEvo = pokemonEvochainObject.chain.evolves_to[0].evolves_to[0].species.name;
+        if (pokemonNameLower == pokemonEvochainObject.chain.species.name) {
+            evolvesFrom = undefined;
+            evolvesTo = {
+                pokemon: pokemonEvochainObject.chain.evolves_to[0].species.name,
+                level: pokemonEvochainObject.chain.evolves_to[0].evolution_details[0].min_level,
+                trigger: pokemonEvochainObject.chain.evolves_to[0].evolution_details[0].trigger.name
+            };
 
-        const evolutionString = `**${firstEvo}** >> **${secondEvo}** >> **${thirdEvo}**`;
-
-        pokemonDexEmbed.addField('Evolution Chain', evolutionString, true);
+            pokemonDexEmbed.addField('Evolves To', `${captialiseFirstLetter(evolvesTo.pokemon)} @ Level ${evolvesTo.level}\nTrigger: ${evolvesTo.trigger}`);
+        }
 
         // Send Embed
         msg.channel.send(pokemonDexEmbed);
