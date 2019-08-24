@@ -102,7 +102,27 @@ class DexCommand extends Command {
                 trigger: pokemonEvochainObject.chain.evolves_to[0].evolution_details[0].trigger.name
             };
 
-            pokemonDexEmbed.addField('Evolves To', `${captialiseFirstLetter(evolvesTo.pokemon)} @ Level ${evolvesTo.level}\nTrigger: ${evolvesTo.trigger}`);
+            pokemonDexEmbed.addField('Evolves To', `**${captialiseFirstLetter(evolvesTo.pokemon)}** @ Level ${evolvesTo.level}\n\nTrigger: ${evolvesTo.trigger}`, true);
+        }
+
+        else if (pokemonNameLower == pokemonEvochainObject.chain.evolves_to[0].species.name) {
+                evolvesFrom = {
+                    pokemon: pokemonEvochainObject.chain.species.name,
+                    level: pokemonEvochainObject.chain.evolves_to[0].evolution_details[0].min_level,
+                    trigger: pokemonEvochainObject.chain.evolves_to[0].evolution_details[0].trigger.name
+                };
+
+            if (pokemonEvochainObject.chain.evolves_to[0].evolves_to[0].length == 0) return pokemonDexEmbed.addField('Evolves From', `**${captialiseFirstLetter(evolvesFrom.pokemon)}** @ Level ${evolvesFrom.level}\n\nTrigger: ${evolvesFrom.trigger}`, true);
+            else {
+                evolvesTo = {
+                    pokemon: pokemonEvochainObject.chain.evolves_to[0].evolves_to[0].species.name,
+                    level: pokemonEvochainObject.chain.evolves_to[0].evolves_to[0].evolution_details[0].min_level,
+                    trigger: pokemonEvochainObject.chain.evolves_to[0].evolves_to[0].evolution_details[0].trigger.name
+                };
+
+                pokemonDexEmbed.addField('Evolves From', `**${captialiseFirstLetter(evolvesFrom.pokemon)}** @ Level ${evolvesFrom.level}\n\nTrigger: ${evolvesFrom.trigger}`, true);
+                pokemonDexEmbed.addField('Evolves To', `**${captialiseFirstLetter(evolvesTo.pokemon)}** @ Level ${evolvesTo.level}\n\nTrigger: ${evolvesTo.trigger}`, true)
+            }
         }
 
         // Send Embed
