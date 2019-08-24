@@ -94,7 +94,7 @@ class DexCommand extends Command {
 
         let [evolvesFrom, evolvesTo] = ['', ''];
 
-        if (pokemonEvochainObject.evolves_to.length == 0) {
+        if (pokemonEvochainObject.chain.evolves_to.length == 0) {
             return;
         }
 
