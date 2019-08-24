@@ -112,7 +112,7 @@ class DexCommand extends Command {
                     trigger: pokemonEvochainObject.chain.evolves_to[0].evolution_details[0].trigger.name
                 };
 
-            if (pokemonEvochainObject.chain.evolves_to[0].evolves_to[0].length == 0) return pokemonDexEmbed.addField('Evolves From', `**${captialiseFirstLetter(evolvesFrom.pokemon)}** @ Level ${evolvesFrom.level}\n\nTrigger: ${evolvesFrom.trigger}`, true);
+            if (pokemonEvochainObject.chain.evolves_to[0].evolves_to[0].evolution_details[0].length == 0) return pokemonDexEmbed.addField('Evolves From', `**${captialiseFirstLetter(evolvesFrom.pokemon)}** @ Level ${evolvesFrom.level}\n\nTrigger: ${evolvesFrom.trigger}`, true);
             else {
                 evolvesTo = {
                     pokemon: pokemonEvochainObject.chain.evolves_to[0].evolves_to[0].species.name,
