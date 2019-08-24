@@ -95,10 +95,10 @@ class DexCommand extends Command {
         let [evolvesFrom, evolvesTo] = ['', ''];
 
         if (pokemonEvochainObject.chain.evolves_to.length == 0) {
-            return;
+            pokemonDexEmbed.addField();
         }
 
-        if (pokemonNameLower == pokemonEvochainObject.chain.species.name) {
+        else if (pokemonNameLower == pokemonEvochainObject.chain.species.name) {
             evolvesFrom = undefined;
             evolvesTo = {
                 pokemon: pokemonEvochainObject.chain.evolves_to[0].species.name,
