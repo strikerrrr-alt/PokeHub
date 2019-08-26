@@ -14,8 +14,8 @@ exports.entry = {
     'evolvesFrom': { species: 'Ivysaur', level: '32', triggeredBy: 'Levelling Up' },
     'eggGroups': ['Monster', 'Grass'],
     'hatchTime': '5140 - 5396 steps',
-    'gif': 'http://play.pokemonshowdown.com/sprites/xyani/mega-venusaur.gif',
-    'gifShiny': 'http://play.pokemonshowdown.com/sprites/xyani-shiny/mega-venusaur.gif',
+    'gif': 'http://play.pokemonshowdown.com/sprites/xyani/venusaur-mega.gif',
+    'gifShiny': 'http://play.pokemonshowdown.com/sprites/xyani-shiny/venusaur-mega.gif',
     'legendary': false,
     'mythical': false
 };

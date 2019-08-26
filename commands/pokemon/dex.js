@@ -35,6 +35,8 @@ class DexCommand extends Command {
         let pokemonName;
         if (argss.length == 2) {
              pokemonName = argss[1];
+        } else if (argss.length == 3) {
+            pokemonName = argss[3];
         } else { pokemonName = argss[0]; }
 
         const pokemonNameLower = pokemonName.toLowerCase();
