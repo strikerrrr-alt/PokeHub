@@ -1,0 +1,21 @@
+exports.entry = {
+    'number': 6,
+    'species': '**Mega Charizard X** (**リザードン** Rizaadon)',
+    'types' : 'Fire | Dragon',
+    'pokedexEntry': 'The overwhelming power that fills its entire body causes it to turn black and create intense blue flames.\n\n*Dex entry from LGP/LGE*',
+    'genderRatio': { M: 0.875, F: 0.125 },
+    'catchRate': { integer: 45, percentage: '11.9%' },
+    'baseStats': { hp: 78, atk: 130, def: 111, spAtk: 130, spDef: 85, spd: 100 },
+    'abilities': { 0: 'Blaze', 1: 'Tough Claws', 'H': 'Solar Power' },
+    'height': 1.7,
+    'weight': 243.6,
+    'colorHex': '#F05868',
+    'color': 'Red',
+    'evolvesFrom': { species: 'Charmeleon', level: '32', triggeredBy: 'Levelling Up' },
+    'eggGroups': ['Monster', 'Dragon'],
+    'hatchTime': '5140 - 5396 steps',
+    'gif': 'http://play.pokemonshowdown.com/sprites/xyani/charizard-megax.gif',
+    'gifShiny': 'http://play.pokemonshowdown.com/sprites/xyani-shiny/charizard-megax.gif',
+    'legendary': false,
+    'mythical': false
+};

@@ -1,0 +1,21 @@
+exports.entry = {
+    'number': 6,
+    'species': '**Charizard** (**リザードン** Rizaadon)',
+    'types' : 'Fire | Flying',
+    'pokedexEntry': 'Charizard flies around the sky in search of powerful opponents. It breathes fire of such great heat that it melts anything. However, it never turns its fiery breath on any opponent weaker than itself.\n\n*Dex entry from ORAS*',
+    'genderRatio': { M: 0.875, F: 0.125 },
+    'catchRate': { integer: 45, percentage: '11.9%' },
+    'baseStats': { hp: 78, atk: 84, def: 78, spAtk: 109, spDef: 85, spd: 100 },
+    'abilities': { 0: 'Blaze', 'H': 'Solar Power' },
+    'height': 1.7,
+    'weight': 199.5,
+    'colorHex': '#F05868',
+    'color': 'Red',
+    'evolvesFrom': { species: 'Charmeleon', level: '32', triggeredBy: 'Levelling Up' },
+    'eggGroups': ['Monster', 'Dragon'],
+    'hatchTime': '5140 - 5396 steps',
+    'gif': 'http://play.pokemonshowdown.com/sprites/xyani/charizard.gif',
+    'gifShiny': 'http://play.pokemonshowdown.com/sprites/xyani-shiny/charizard.gif',
+    'legendary': false,
+    'mythical': false
+};

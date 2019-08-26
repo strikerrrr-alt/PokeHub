@@ -1,6 +1,6 @@
 exports.entry = {
     'number': 1,
-    'species': 'Bulbasaur',
+    'species': '**Bulbasaur** (**フシギダネ** *Fushigidane*)',
     'types' : 'Grass | Poison',
     'pokedexEntry': 'Bulbasaur can be seen napping in bright sunlight. There is a seed on its back. By soaking up the sun\'s rays, the seed grows progressively larger.\n\n*Dex entry from ORAS*',
     'genderRatio': { M: 0.875, F: 0.125 },

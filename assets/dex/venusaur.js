@@ -1,6 +1,6 @@
 exports.entry = {
     'number': 3,
-    'species': 'Venusaur',
+    'species': '**Venusaur** (**フシギバナ** *Fushigibana*)',
     'types' : 'Grass | Poison',
     'pokedexEntry': 'There is a large flower on Venusaur\'s back. The flower is said to take on vivid colors if it gets plenty of nutrition and sunlight. The flower\'s aroma soothes the emotions of people.\n\n*Dex entry from ORAS*',
     'genderRatio': { M: 0.875, F: 0.125 },

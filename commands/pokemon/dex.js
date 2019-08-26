@@ -37,6 +37,8 @@ class DexCommand extends Command {
              pokemonName = argss[1];
         } else if (argss.length == 3) {
             pokemonName = argss[2];
+        } else if (argss.length == 4) {
+            pokemonName = argss[2];
         } else { pokemonName = argss[0]; }
 
         const pokemonNameLower = pokemonName.toLowerCase();
@@ -48,6 +50,7 @@ class DexCommand extends Command {
         if (argss[0] != pokemonName && argss[0] != 'shiny' && argss[0] != 'Shiny') {
             pokemonObject = require(`../../assets/dex/${argss[0]}-${pokemonNameLower}`).entry;
         } else if (argss[0] != pokemonName && argss[1] != pokemonName && !argss[1] != 'shiny' && !argss[1] != 'Shiny') pokemonObject = require(`../../assets/dex/${pokemonNameLower}-${argss[1]}`).entry;
+        else if (argss[0] != pokemonName && argss[1] != pokemonName && !argss[1] != 'shiny' && !argss[1] != 'Shiny' && argss[4] == 'x' || argss[4] == 'X' || argss[4] == 'y' || argss[4] == 'Y') pokemonObject = require(`../../assets/dex/${pokemonNameLower}-${argss[1]}-${argss[4]}`).entry;
         else pokemonObject = require(`../../assets/dex/${pokemonNameLower}`).entry;
 
 
@@ -67,8 +70,10 @@ class DexCommand extends Command {
             .setAuthor('PokéHub', this.client.user.avatarURL({ size: 1024 }), 'https://discordapp.com/oauth2/authorize?client_id=611554251918934016&permissions=313408&scope=bot')
             .setColor(pokemonObject.colorHex)
             .setFooter(`Data fetched in ${fetchTime}ms.`)
-            .setImage(gif)
-            .setTitle(pokemonObject.species);
+            .setImage(gif);
+
+        // Adding Pokemon Name
+        pokemonDexEmbed.addField('Species', pokemonObject.species, true);
 
         // Adding Pokemon Type
         pokemonDexEmbed.addField('Type', pokemonObject.types, true);

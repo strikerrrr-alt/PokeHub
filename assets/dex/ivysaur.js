@@ -1,6 +1,6 @@
 exports.entry = {
     'number': 2,
-    'species': 'Ivysaur',
+    'species': '**Ivysaur** (**フシギソウ** *Fushigisou*)',
     'types' : 'Grass | Poison',
     'pokedexEntry': 'There is a bud on this Pokémon\'s back. To support its weight, Ivysaur\'s legs and trunk grow thick and strong. If it starts spending more time lying in the sunlight, it’s a sign that the bud will bloom into a large flower soon.\n\n*Dex entry from ORAS*',
     'genderRatio': { M: 0.875, F: 0.125 },

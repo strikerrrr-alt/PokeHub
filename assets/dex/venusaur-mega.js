@@ -1,8 +1,8 @@
 exports.entry = {
     'number': 3,
-    'species': 'Mega Venusaur',
+    'species': '**Mega Venusaur** (**フシギバナ** *Fushigibana*',
     'types' : 'Grass | Poison',
-    'pokedexEntry': 'In order to support its flower, which has grown larger due to Mega Evolution, its back and legs have become stronger.\n\n*Dex entry from LET\'S GO PIKACHU/EEVEE*',
+    'pokedexEntry': 'In order to support its flower, which has grown larger due to Mega Evolution, its back and legs have become stronger.\n\n*Dex entry from LGP/LGE*',
     'genderRatio': { M: 0.875, F: 0.125 },
     'catchRate': { integer: 45, percentage: '11.9%' },
     'baseStats': { hp: 80, atk: 100, def: 123, spAtk: 122, spDef: 120, spd: 80 },

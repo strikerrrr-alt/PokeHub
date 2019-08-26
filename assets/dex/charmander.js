@@ -1,0 +1,21 @@
+exports.entry = {
+    'number': 4,
+    'species': '*Charmander* (**ヒトカゲ** *Hitokage*)',
+    'types' : 'Fire',
+    'pokedexEntry': 'The flame that burns at the tip of its tail is an indication of its emotions. The flame wavers when Charmander is enjoying itself. If the Pokémon becomes enraged, the flame burns fiercely.\n\n*Dex entry from ORAS*',
+    'genderRatio': { M: 0.875, F: 0.125 },
+    'catchRate': { integer: 45, percentage: '11.9%' },
+    'baseStats': { hp: 39, atk: 52, def: 43, spAtk: 60, spDef: 50, spd: 65 },
+    'abilities': { 0: 'Blaze', 'H': 'Solar Power' },
+    'height': 0.6,
+    'weight': 18.7,
+    'colorHex': '#F05868',
+    'color': 'Red',
+    'evolvesTo': { species: 'Charmeleon', level: '16', triggeredBy: 'Levelling Up' },
+    'eggGroups': ['Monster', 'Dragon'],
+    'hatchTime': '5140 - 5396 steps',
+    'gif': 'http://play.pokemonshowdown.com/sprites/xyani/charmander.gif',
+    'gifShiny': 'http://play.pokemonshowdown.com/sprites/xyani-shiny/charmander.gif',
+    'legendary': false,
+    'mythical': false
+};

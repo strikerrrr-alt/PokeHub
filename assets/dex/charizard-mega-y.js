@@ -1,0 +1,21 @@
+exports.entry = {
+    'number': 6,
+    'species': '**Mega Charizard Y** (**リザードン** Rizaadon)',
+    'types' : 'Fire | Flying',
+    'pokedexEntry': 'Its bond with its Trainer is the source of its power. It boasts speed and maneuverability greater than that of a jet fighter.\n\n*Dex entry from LGP/LGE*',
+    'genderRatio': { M: 0.875, F: 0.125 },
+    'catchRate': { integer: 45, percentage: '11.9%' },
+    'baseStats': { hp: 78, atk: 104, def: 78, spAtk: 159, spDef: 115, spd: 100 },
+    'abilities': { 0: 'Blaze', 1: 'Drought', 'H': 'Solar Power' },
+    'height': 1.7,
+    'weight': 221.6,
+    'colorHex': '#F05868',
+    'color': 'Red',
+    'evolvesFrom': { species: 'Charmeleon', level: '32', triggeredBy: 'Levelling Up' },
+    'eggGroups': ['Monster', 'Dragon'],
+    'hatchTime': '5140 - 5396 steps',
+    'gif': 'http://play.pokemonshowdown.com/sprites/xyani/charizard-megay.gif',
+    'gifShiny': 'http://play.pokemonshowdown.com/sprites/xyani-shiny/charizard-megay.gif',
+    'legendary': false,
+    'mythical': false
+};
