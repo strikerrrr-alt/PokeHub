@@ -1,0 +1,36 @@
+exports.baseEntry = {
+    'number': 0,
+    'species': 'Null',
+    'types' : 'Null | Null',
+    'pokedexEntry': 'Dex entry dex entry dex entry\n\n*Dex entry from GAME*',
+    'genderRatio': { M: 0, F: 0 },
+    'catchRate': { integer: 0, percentage: '0%' },
+    'baseStats': { hp: 0, atk: 0, def: 0, spAtk: 0, spDef: 0, spd: 0 },
+    'abilities': { 0: 'Null', 1: 'Null', 'H': 'Null' },
+    'height': 0.0,
+    'weight': 0.0,
+    'colorHex': '#ffffff',
+    'color': 'White',
+    'evolvesTo': { species: 'Null', level: 'Null', triggeredBy: 'Null' },
+    'evolvesFrom': { species: 'Null', level: 'Null', triggeredBy: 'Null' },
+    'eggGroups': ['Null', 'Null'],
+    'hatchTime': '0000 - 1111 steps',
+    'gif': 'http://play.pokemonshowdown.com/sprites/xyani/null.gif',
+    'gifShiny': 'http://play.pokemonshowdown.com/sprites/xyani-shiny/null.gif',
+    'legendary': false,
+    'mythical': false
+};
+
+/*
+        num: 1,
+		species: "Bulbasaur",
+		types: ["Grass", "Poison"],
+		genderRatio: {M: 0.875, F: 0.125},
+		baseStats: {hp: 45, atk: 49, def: 49, spa: 65, spd: 65, spe: 45},
+		abilities: {0: "Overgrow", H: "Chlorophyll"},
+		heightm: 0.7,
+		weightkg: 6.9,
+		color: "Green",
+		evos: ["ivysaur"],
+        eggGroups: ["Monster", "Grass"],
+*/

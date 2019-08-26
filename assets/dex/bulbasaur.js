@@ -1,0 +1,21 @@
+exports.entry = {
+    'number': 1,
+    'species': 'Bulbasaur',
+    'types' : 'Grass | Poison',
+    'pokedexEntry': 'Bulbasaur can be seen napping in bright sunlight. There is a seed on its back. By soaking up the sun\'s rays, the seed grows progressively larger.\n\n*Dex entry from ORAS*',
+    'genderRatio': { M: 0.875, F: 0.125 },
+    'catchRate': { integer: 45, percentage: '11.9%' },
+    'baseStats': { hp: 45, atk: 49, def: 49, spAtk: 65, spDef: 65, spd: 45 },
+    'abilities': { 0: 'Overgrow', 'H': 'Chlorophyll' },
+    'height': 0.7,
+    'weight': 15.2,
+    'colorHex': '#40B868',
+    'color': 'Green',
+    'evolvesTo': { species: 'Ivysaur', level: '16', triggeredBy: 'Levelling Up' },
+    'eggGroups': ['Monster', 'Grass'],
+    'hatchTime': '5140 - 5396 steps',
+    'gif': 'http://play.pokemonshowdown.com/sprites/xyani/bulbasaur.gif',
+    'gifShiny': 'http://play.pokemonshowdown.com/sprites/xyani-shiny/bulbasaur.gif',
+    'legendary': false,
+    'mythical': false
+};
