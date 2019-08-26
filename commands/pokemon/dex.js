@@ -50,7 +50,8 @@ class DexCommand extends Command {
 
         if (argss[0] != pokemonName && argss[0] != 'shiny' && argss[0] != 'Shiny') {
             pokemonObject = require(`../../assets/dex/${argss[0]}-${pokemonNameLower}`).entry;
-        } else if (argss[0] != pokemonName && argss[1] != pokemonName && !argss[1] != 'shiny' && !argss[1] != 'Shiny' && argss[4] == 'x' || argss[4] == 'X' || argss[4] == 'y' || argss[4] == 'Y') pokemonObject = require(`../../assets/dex/${pokemonNameLower}-${argss[1]}-${argss[4]}`).entry;
+        } else if (argss[0] != pokemonName && argss[1] != pokemonName && !argss[0] == 'shiny' || argss[0] != 'Shiny' && argss[3] == 'x' || argss[3] == 'X' || argss[3] == 'y' || argss[3] == 'Y') pokemonObject = require(`../../assets/dex/${pokemonNameLower}-${argss[1]}-${argss[3]}`).entry;
+        else if (argss[0] != pokemonName && argss[1] != pokemonName && !argss[1] == 'shiny' || argss[1] != 'Shiny' && argss[4] == 'x' || argss[4] == 'X' || argss[4] == 'y' || argss[4] == 'Y') pokemonObject = require(`../../assets/dex/${pokemonNameLower}-${argss[1]}-${argss[4]}`).entry;
         else if (argss[0] != pokemonName && argss[1] != pokemonName && !argss[1] != 'shiny' && !argss[1] != 'Shiny') pokemonObject = require(`../../assets/dex/${pokemonNameLower}-${argss[1]}`).entry;
         else pokemonObject = require(`../../assets/dex/${pokemonNameLower}`).entry;
 
