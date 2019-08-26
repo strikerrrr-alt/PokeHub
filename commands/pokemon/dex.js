@@ -49,7 +49,7 @@ class DexCommand extends Command {
         let pokemonObject;
 
         // Mega
-        if (argss[0].toLowerCase() != 'shiny' && argss[1].toLowerCase() == 'mega' && argss[3].toLowerCase() != 'x' || argss[3].toLowerCase() != 'y') {
+        if (argss[0].toLowerCase() != 'shiny' && argss[1].toLowerCase() == 'mega' && !argss[3]) {
             pokemonObject = require(`../../assets/dex/${pokemonNameLower}-${argss[0]}`).entry;
             console.log('Mega');
         }
