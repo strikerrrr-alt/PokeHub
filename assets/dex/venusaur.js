@@ -1,4 +1,4 @@
-exports.baseEntry = {
+exports.entry = {
     'number': 3,
     'species': 'Venusaur',
     'types' : 'Grass | Poison',

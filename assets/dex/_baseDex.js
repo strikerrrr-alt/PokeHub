@@ -1,4 +1,4 @@
-exports.baseEntry = {
+exports.entry = {
     'number': 0,
     'species': 'Null',
     'types' : 'Null | Null',
