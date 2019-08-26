@@ -59,6 +59,9 @@ class DexCommand extends Command {
         // Adding Pokemon Type
         pokemonDexEmbed.addField('Type', pokemonObject.types, true);
 
+        // Adding Pokemon Color
+        pokemonDexEmbed.addField('Color', pokemonObject.color, true);
+
         // Adding height & weight
         pokemonDexEmbed.addField('Height', `${pokemonObject.height}m`, true);
         pokemonDexEmbed.addField('Weight', `${pokemonObject.weight}lbs`, true);
