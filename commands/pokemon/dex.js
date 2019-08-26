@@ -62,18 +62,18 @@ class DexCommand extends Command {
         // Adding Pokemon abilities
         let [abilityOne, abilityTwo, abilityHidden] = ['', '', ''];
 
-        if (pokemonObject.abilities.length == 1) {
+        if (Object.keys(pokemonObject.abilities).length == 1) {
              abilityOne = pokemonObject.abilities['0'];
         }
 
-        else if (pokemonObject.abilities.length == 2) {
+        else if (Object.keys(pokemonObject.abilities).length == 2) {
              abilityOne = pokemonObject.abilities['0'];
              abilityHidden = pokemonObject.abilities['H'];
 
              abilityHidden = `*${abilityHidden}*`;
         }
 
-        else if (pokemonObject.abilities.length == 3) {
+        else if (Object.keys(pokemonObject.abilities).length == 3) {
             abilityOne = pokemonObject.abilities['0'];
             abilityTwo = pokemonObject.abilities['1'];
             abilityHidden = pokemonObject.abilities['H'];
