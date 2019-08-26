@@ -11,7 +11,7 @@ exports.entry = {
     'weight': 220.5,
     'colorHex': '#40B868',
     'color': 'Green',
-    'evolvesFrom': { species: 'Ivysaur', level: '36', triggeredBy: 'Levelling Up' },
+    'evolvesFrom': { species: 'Ivysaur', level: '32', triggeredBy: 'Levelling Up' },
     'eggGroups': ['Monster', 'Grass'],
     'hatchTime': '5140 - 5396 steps',
     'gif': 'http://play.pokemonshowdown.com/sprites/xyani/venusaur.gif',
