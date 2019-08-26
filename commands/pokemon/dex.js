@@ -43,8 +43,8 @@ class DexCommand extends Command {
         // Fetch Pokemon object
         let pokemonObject;
 
-        if (argss[0] != pokemonName) {
-            pokemonObject = require(`../../assets/dex/${argss[0]-pokemonNameLower}`).entry;
+        if (argss[0] != pokemonName && argss[0] != 'shiny' && argss[0] != 'Shiny') {
+            pokemonObject = require(`../../assets/dex/${argss[0]}-${pokemonNameLower}`).entry;
         } else pokemonObject = require(`../../assets/dex/${pokemonNameLower}`).entry;
 
 
