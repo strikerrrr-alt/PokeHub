@@ -34,7 +34,7 @@ class DexCommand extends Command {
 
 
         // Fetch Pokemon object
-        const pokemonObject = require(`../../assets/dex/bulbasaur`).entry;
+        const pokemonObject = require(`../../assets/dex/${pokemonNameLower}`).entry;
 
         // Other fetch time related variable
         const endTime = Date.now();
@@ -58,6 +58,19 @@ class DexCommand extends Command {
 
         // Adding Pokemon Type
         pokemonDexEmbed.addField('Type', pokemonObject.types, true);
+
+        // Adding height & weight
+        pokemonDexEmbed.addField('Height', `${pokemonObject.height}m`, true);
+        pokemonDexEmbed.addField('Weight', `${pokemonObject.weight}lbs`, true);
+
+        // Adding Pokedex Entry
+        pokemonDexEmbed.addField('PokeDex Entry', pokemonObject.pokedexEntry, true);
+
+        // Adding gender ratio
+        pokemonDexEmbed.addField('Gender Ratio', `Male: ${pokemonObject.genderRatio.M * 100}\nFemale: ${pokemonObject.genderRatio.F * 100}`, true);
+
+        // Adding catch rate
+        pokemonDexEmbed.addField('Catch Rate', `${pokemonObject.catchRate.integer} (${pokemonObject.catchRate.percentage})`, true);
 
         // Adding Pokemon abilities
         let [abilityOne, abilityTwo, abilityHidden] = ['', '', ''];
@@ -86,6 +99,8 @@ class DexCommand extends Command {
         else if (abilityOne && !abilityTwo && abilityHidden) pokemonDexEmbed.addField('Abilities', `${abilityOne}, ${abilityHidden}`, true);
         else if (abilityOne && abilityTwo && abilityHidden) pokemonDexEmbed.addField('Abilities', `${abilityOne}, ${abilityTwo}, ${abilityHidden}`, true);
 
+        // Adding Base Stats
+        pokemonDexEmbed.addField('Base Stats', `HP: ${pokemonObject.baseStats.hp}\nATK: ${pokemonObject.baseStats.atk}\nDEF: ${pokemonObject.baseStats.def}\nSP. ATK: ${pokemonObject.baseStats.spAtk}\nSP. DEF: ${pokemonObject.baseStats.spDef}\nSPD: ${pokemonObject.baseStats.spd}`);
 
         // Adding evolutions
         let [evolvesFrom, evolvesTo] = [{}, {}];
@@ -98,9 +113,9 @@ class DexCommand extends Command {
             };
 
             if (evolvesFrom.level == null) {
-                pokemonDexEmbed.addField('Evolves From', `**${evolvesFrom.species}**\nTriggered By: ${evolvesFrom.triggeredBy}`);
+                pokemonDexEmbed.addField('Evolves From', `**${evolvesFrom.species}**\nTriggered By: ${evolvesFrom.triggeredBy}`, true);
             } else {
-                pokemonDexEmbed.addField('Evolves From', `**${evolvesFrom.species}** @ LVL ${evolvesFrom.level}`);
+                pokemonDexEmbed.addField('Evolves From', `**${evolvesFrom.species}** @ LVL ${evolvesFrom.level}`, true);
             }
         }
 
@@ -112,11 +127,21 @@ class DexCommand extends Command {
             };
 
             if (evolvesTo.level == null) {
-                pokemonDexEmbed.addField('Evolves To', `**${evolvesTo.species}**\nTriggered By: ${evolvesTo.triggeredBy}`);
+                pokemonDexEmbed.addField('Evolves To', `**${evolvesTo.species}**\nTriggered By: ${evolvesTo.triggeredBy}`, true);
             } else {
-                pokemonDexEmbed.addField('Evolves To', `**${evolvesTo.species}** @ LVL ${evolvesTo.level}`);
+                pokemonDexEmbed.addField('Evolves To', `**${evolvesTo.species}** @ LVL ${evolvesTo.level}`, true);
             }
         }
+
+        // Adding egg groups
+        if (pokemonObject.eggGroups.length == 1) {
+            pokemonDexEmbed.addField('Egg Group', pokemonObject.eggGroups[0], true);
+        } else if (pokemonObject.eggGroups.length == 2) {
+            pokemonDexEmbed.addField('Egg Groups', `${pokemonObject.eggGroups[0]} and ${pokemonObject.eggGroups[1]}`, true);
+        }
+
+        // Adding hatch time
+        pokemonDexEmbed.addField('Hatch Time', pokemonObject.hatchTime, true);
 
         // Send Embed
         msg.channel.send(pokemonDexEmbed);
