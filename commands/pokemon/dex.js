@@ -29,6 +29,7 @@ class DexCommand extends Command {
         const startTime = Date.now();
 
         const argss = args.pokemon.split(' ');
+        console.log(argss);
 
         // Pokemon name stuff
         let pokemonName;
