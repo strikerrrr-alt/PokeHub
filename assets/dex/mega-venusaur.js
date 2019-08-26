@@ -1,0 +1,21 @@
+exports.entry = {
+    'number': 3,
+    'species': 'Mega Venusaur',
+    'types' : 'Grass | Poison',
+    'pokedexEntry': 'In order to support its flower, which has grown larger due to Mega Evolution, its back and legs have become stronger.\n\n*Dex entry from LET\'S GO PIKACHU/EEVEE*',
+    'genderRatio': { M: 0.875, F: 0.125 },
+    'catchRate': { integer: 45, percentage: '11.9%' },
+    'baseStats': { hp: 80, atk: 100, def: 123, spAtk: 122, spDef: 120, spd: 80 },
+    'abilities': { 0: 'Overgrow', 1: 'Thick Fat', 'H': 'Chlorophyll' },
+    'height': 2.4,
+    'weight': 342.8,
+    'colorHex': '#40B868',
+    'color': 'Green',
+    'evolvesFrom': { species: 'Ivysaur', level: '32', triggeredBy: 'Levelling Up' },
+    'eggGroups': ['Monster', 'Grass'],
+    'hatchTime': '5140 - 5396 steps',
+    'gif': 'http://play.pokemonshowdown.com/sprites/xyani/mega-venusaur.gif',
+    'gifShiny': 'http://play.pokemonshowdown.com/sprites/xyani-shiny/mega-venusaur.gif',
+    'legendary': false,
+    'mythical': false
+};

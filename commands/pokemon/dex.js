@@ -45,7 +45,8 @@ class DexCommand extends Command {
 
         if (argss[0] != pokemonName && argss[0] != 'shiny' && argss[0] != 'Shiny') {
             pokemonObject = require(`../../assets/dex/${argss[0]}-${pokemonNameLower}`).entry;
-        } else pokemonObject = require(`../../assets/dex/${pokemonNameLower}`).entry;
+        } else if (argss[0] != pokemonName && argss[1] != pokemonName && !argss[1] != 'shiny' && !argss[1] != 'Shiny') pokemonObject = require(`../../assets/dex/${argss[0]}-${pokemonNameLower}`).entry;
+        else pokemonObject = require(`../../assets/dex/${pokemonNameLower}`).entry;
 
 
         // Other fetch time related variable
@@ -57,7 +58,7 @@ class DexCommand extends Command {
         let gif = pokemonObject.gif;
 
         // Checking if they wanted shiny gif
-        if (argss[0] == 'shiny' || argss[0] == 'Shiny') gif = pokemonObject.gifShiny;
+        if (argss[0] == 'shiny' || argss[0] == 'Shiny' || argss[1] == 'shiny' || argss[1] == 'Shiny') gif = pokemonObject.gifShiny;
 
         // Creating embed to send to Discord
         const pokemonDexEmbed = this.client.util.embed()
