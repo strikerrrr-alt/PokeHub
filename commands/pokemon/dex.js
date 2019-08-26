@@ -47,7 +47,7 @@ class DexCommand extends Command {
 
         if (argss[0] != pokemonName && argss[0] != 'shiny' && argss[0] != 'Shiny') {
             pokemonObject = require(`../../assets/dex/${argss[0]}-${pokemonNameLower}`).entry;
-        } else if (argss[0] != pokemonName && argss[1] != pokemonName && !argss[1] != 'shiny' && !argss[1] != 'Shiny') pokemonObject = require(`../../assets/dex/${argss[0]}-${pokemonNameLower}`).entry;
+        } else if (argss[0] != pokemonName && argss[1] != pokemonName && !argss[1] != 'shiny' && !argss[1] != 'Shiny') pokemonObject = require(`../../assets/dex/${argss[1]}-${pokemonNameLower}`).entry;
         else pokemonObject = require(`../../assets/dex/${pokemonNameLower}`).entry;
 
 
