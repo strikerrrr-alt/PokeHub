@@ -42,11 +42,10 @@ class DexCommand extends Command {
         // Fetch time
         const fetchTime = Math.round(endTime - startTime);
 
-        let gif;
+        let gif = pokemonObject.gif;
 
-        // Checking if they wanted shiny entry
+        // Checking if they wanted shiny gif
         if (msg.content.includes('shiny')) gif = pokemonObject.gifShiny;
-        else gif = pokemonObject.gif;
 
         // Creating embed to send to Discord
         const pokemonDexEmbed = this.client.util.embed()
