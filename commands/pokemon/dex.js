@@ -45,7 +45,7 @@ class DexCommand extends Command {
         let gif;
 
         // Checking if they wanted shiny entry
-        if (msg.content.contains('shiny')) gif = pokemonObject.gifShiny;
+        if (msg.content.includes('shiny')) gif = pokemonObject.gifShiny;
         else gif = pokemonObject.gif;
 
         // Creating embed to send to Discord
