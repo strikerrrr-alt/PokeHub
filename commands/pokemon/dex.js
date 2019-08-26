@@ -112,9 +112,9 @@ class DexCommand extends Command {
             };
 
             if (evolvesTo.level == null) {
-                pokemonDexEmbed.addField('Evolves From', `**${evolvesTo.species}**\nTriggered By: ${evolvesTo.triggeredBy}`);
+                pokemonDexEmbed.addField('Evolves To', `**${evolvesTo.species}**\nTriggered By: ${evolvesTo.triggeredBy}`);
             } else {
-                pokemonDexEmbed.addField('Evolves From', `**${evolvesTo.species}** @ LVL ${evolvesTo.level}`);
+                pokemonDexEmbed.addField('Evolves To', `**${evolvesTo.species}** @ LVL ${evolvesTo.level}`);
             }
         }
 
