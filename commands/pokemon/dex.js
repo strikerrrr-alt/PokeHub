@@ -48,25 +48,28 @@ class DexCommand extends Command {
         // Fetch Pokemon object
         let pokemonObject;
 
-        // Shiny Mega X/Y
-        if (argss[3].toLowerCase() == 'x' || argss[3].toLowerCase() == 'y' && argss[0].toLowerCase() == 'shiny') {
-            pokemonObject = require(`../../assets/dex/${pokemonNameLower}-${argss[1]}-${argss[3]}`).entry;
-            console.log('Shiny Mega X/Y');
+        // Mega
+        if (argss[0].toLowerCase() != 'shiny' && argss[1].toLowerCase() == 'mega' && argss[3].toLowerCase() != 'x' || argss[3].toLowerCase() != 'y') {
+            pokemonObject = require(`../../assets/dex/${pokemonNameLower}-${argss[0]}`).entry;
+            console.log('Mega');
         }
+
+        // Shiny Mega
+        else if (argss[0].toLowerCase() == 'shiny' && argss[1].toLowerCase() == 'mega' && argss[3].toLowerCase() != 'x' || argss[3].toLowerCase() != 'y') {
+            pokemonObject = require(`../../assets/dex/${pokemonNameLower}-${argss[1]}`).entry;
+            console.log('Shiny Mega');
+        }
+
         // Mega X/Y
         else if (argss[2].toLowerCase() == 'x' || argss[2].toLowerCase() == 'y' && argss[0].toLowerCase() != 'shiny') {
             pokemonObject = require(`../../assets/dex/${pokemonNameLower}-${argss[0]}-${argss[2]}`).entry;
             console.log('Mega X/Y');
         }
-        // Shiny Mega
-        else if (argss[0].toLowerCase() == 'shiny' && argss[1].toLowerCase() == 'mega') {
-            pokemonObject = require(`../../assets/dex/${pokemonNameLower}-${argss[1]}`).entry;
-            console.log('Shiny Mega');
-        }
-        // Mega
-        else if (argss[0].toLowerCase() != 'shiny' && argss[1].toLowerCase() == 'mega') {
-            pokemonObject = require(`../../assets/dex/${pokemonNameLower}-${argss[0]}`).entry;
-            console.log('Mega');
+
+        // Shiny Mega X/Y
+        else if (argss[3].toLowerCase() == 'x' || argss[3].toLowerCase() == 'y' && argss[0].toLowerCase() == 'shiny') {
+            pokemonObject = require(`../../assets/dex/${pokemonNameLower}-${argss[1]}-${argss[3]}`).entry;
+            console.log('Shiny Mega X/Y');
         }
 
         else {
