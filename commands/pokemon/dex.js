@@ -53,7 +53,7 @@ class DexCommand extends Command {
         // Mega X/Y
         else if (argss[0] != pokemonName && argss[1] != pokemonName && argss[2] != pokemonName && argss[1] != 'shiny' || argss[1] != 'Shiny' && argss[3] == 'x' || argss[3] == 'X' || argss[3] == 'y' || argss[3] == 'Y') pokemonObject = require(`../../assets/dex/${pokemonNameLower}-${argss[1]}-${argss[3]}`).entry;
         // Shiny Mega
-        else if (argss[0] != pokemonName && argss[1] != pokemonName && argss[0] == 'shiny' && argss[0] == 'Shiny') pokemonObject = require(`../../assets/dex/${pokemonNameLower}-${argss[1]}`).entry;
+        else if (argss[0] != pokemonName && argss[1] != pokemonName && argss[2] != pokemonName && argss[0] == 'shiny' && argss[0] == 'Shiny') pokemonObject = require(`../../assets/dex/${pokemonNameLower}-${argss[1]}`).entry;
         // Mega
         else if (argss[0] != pokemonName && argss[0] != 'shiny' && argss[0] != 'Shiny') pokemonObject = require(`../../assets/dex/${pokemonNameLower}-${argss[0]}`).entry;
         else pokemonObject = require(`../../assets/dex/${pokemonNameLower}`).entry;
