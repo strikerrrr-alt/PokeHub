@@ -28,13 +28,24 @@ class DexCommand extends Command {
         // Create variable for measuring fetch time
         const startTime = Date.now();
 
+        const argss = args.pokemon.split(' ');
+
         // Pokemon name stuff
-        const pokemonName = args.pokemon,
-            pokemonNameLower = pokemonName.toLowerCase();
+        let pokemonName;
+        if (argss.length == 2) {
+             pokemonName = argss[1];
+        } else { pokemonName = argss[0]; }
+
+        const pokemonNameLower = pokemonName.toLowerCase();
 
 
         // Fetch Pokemon object
-        const pokemonObject = require(`../../assets/dex/${pokemonNameLower}`).entry;
+        let pokemonObject;
+
+        if (argss[0] != pokemonName) {
+            pokemonObject = require(`../../assets/dex/${argss[0]-pokemonNameLower}`).entry;
+        } else pokemonObject = require(`../../assets/dex/${pokemonNameLower}`).entry;
+
 
         // Other fetch time related variable
         const endTime = Date.now();
@@ -45,7 +56,7 @@ class DexCommand extends Command {
         let gif = pokemonObject.gif;
 
         // Checking if they wanted shiny gif
-        if (msg.content.includes('shiny')) gif = pokemonObject.gifShiny;
+        if (argss[0] == 'shiny' || argss[0] == 'Shiny') gif = pokemonObject.gifShiny;
 
         // Creating embed to send to Discord
         const pokemonDexEmbed = this.client.util.embed()
