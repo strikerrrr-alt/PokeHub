@@ -54,7 +54,7 @@ class DexCommand extends Command {
             console.log('Regular Shiny Poke');
         }
         // Reg
-        else if (argss[0].toLowerCase() != 'mega' && argss[0].toLowerCase() != 'shiny' && argss[1].toLowerCase() == pokemonNameLower && !args[2] && !args[3]) {
+        else if (argss[0].toLowerCase() != 'mega' && argss[0].toLowerCase() != 'shiny' && !argss[1] && !args[2] && !args[3]) {
             pokemonObject = require(`../../assets/dex/${pokemonNameLower}`).entry;
             console.log('Regular Poke');
         }
