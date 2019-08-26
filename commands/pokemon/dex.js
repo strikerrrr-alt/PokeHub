@@ -48,8 +48,18 @@ class DexCommand extends Command {
         // Fetch Pokemon object
         let pokemonObject;
 
+        // Reg Shiny
+        if (argss[0].toLowerCase != 'mega' && argss[0].toLowerCase() == 'shiny' && !args[2] &&! args[3]) {
+            pokemonObject = require(`../../assets/dex/${pokemonNameLower}`).entry;
+            console.log('Regular Shiny Poke');
+        }
+        // Reg
+        else if (argss[0].toLowerCase != 'mega' && argss[0].toLowerCase() != 'shiny' && !args[2] && !args[3]) {
+            pokemonObject = require(`../../assets/dex/${pokemonNameLower}`).entry;
+            console.log('Regular Poke');
+        }
         // Mega
-        if (argss[0].toLowerCase() != 'shiny' && argss[1].toLowerCase() == 'mega' && !argss[3]) {
+        else if (argss[0].toLowerCase() != 'shiny' && argss[1].toLowerCase() == 'mega' && !argss[3]) {
             pokemonObject = require(`../../assets/dex/${pokemonNameLower}-${argss[0]}`).entry;
             console.log('Mega');
         }
@@ -71,12 +81,6 @@ class DexCommand extends Command {
             pokemonObject = require(`../../assets/dex/${pokemonNameLower}-${argss[1]}-${argss[3]}`).entry;
             console.log('Shiny Mega X/Y');
         }
-
-        else {
-            pokemonObject = require(`../../assets/dex/${pokemonNameLower}`).entry;
-            console.log('Regular Poke');
-        }
-
 
         // Other fetch time related variable
         const endTime = Date.now();
