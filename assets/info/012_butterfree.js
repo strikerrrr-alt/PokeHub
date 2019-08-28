@@ -1,0 +1,23 @@
+exports.info = {
+    'number': 12,
+    'species': '**Butterfree** (**バタフリー** *Batafurii*)',
+    'types' : 'Bug | Flying',
+    'pokedexEntry': 'Its wings are covered in toxic scales. If it finds bird Pokémon going after Caterpie, Butterfree sprinkles its scales on them to drive them off. Nectar from pretty flowers is its favorite food. In fields of flowers, it has heated battles with Cutiefly for territory.\n\n*Dex entry from USUM*',
+    'genderRatio': { M: 0.5, F: 0.5 },
+    'catchRate': { integer: 45, percentage: '11.9%' },
+    'baseStats': { hp: 60, atk: 45, def: 50, spAtk: 80, spDef: 80, spd: 70 },
+    'abilities': { 0: 'Compound Eyes', 'H': 'Tinted Lense' },
+    'height': 1.1,
+    'weight': 70.5,
+    'colorHex': '#8C80A5',
+    'colorHexShiny': '#8C81A6',
+    'color': 'Dark Grayish Violet',
+    'colorShiny': 'Dark Grayish Violet',
+    'evolvesFrom': { species: 'Metapod', level: '10', triggeredBy: 'Levelling Up' },
+    'eggGroups': ['Bug'],
+    'hatchTime': '3855 - 4111 steps',
+    'gif': 'http://play.pokemonshowdown.com/sprites/xyani/butterfree.gif',
+    'gifShiny': 'http://play.pokemonshowdown.com/sprites/xyani-shiny/butterfree.gif',
+    'legendary': false,
+    'mythical': false
+};
