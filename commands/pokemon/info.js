@@ -58,35 +58,35 @@ class InfoCommand extends Command {
 
         // Reg Shiny
         if (argss[0].toLowerCase() == 'shiny' && argss[1].toLowerCase() == pokemonNameLower && !args[2] && !args[3]) {
-            pokemonObject = require(`../../assets/dex/${PID}_${pokemonNameLower}`).info;
+            pokemonObject = require(`../../assets/dex/${PID}_${pokemonNameLower}.js`).info;
             console.log('Regular Shiny Poke');
         }
         // Reg
         else if (argss[0].toLowerCase() != 'mega' && argss[0].toLowerCase() != 'shiny' && !argss[1] && !args[2] && !args[3]) {
-            pokemonObject = require(`../../assets/dex/${PID}_${pokemonNameLower}`).info;
+            pokemonObject = require(`../../assets/dex/${PID}_${pokemonNameLower}.js`).info;
             console.log('Regular Poke');
         }
         // Mega
         else if (argss[0].toLowerCase() != 'shiny' && argss[0].toLowerCase() == 'mega' && !argss[2] && !args[3]) {
-            pokemonObject = require(`../../assets/dex/${PID}_${pokemonNameLower}-${argss[0]}`).info;
+            pokemonObject = require(`../../assets/dex/${PID}_${pokemonNameLower}-${argss[0]}.js`).info;
             console.log('Mega');
         }
 
         // Shiny Mega
         else if (argss[0].toLowerCase() == 'shiny' && argss[1].toLowerCase() == 'mega' && !argss[3]) {
-            pokemonObject = require(`../../assets/dex/${PID}_${pokemonNameLower}-${argss[1]}`).info;
+            pokemonObject = require(`../../assets/dex/${PID}_${pokemonNameLower}-${argss[1]}.js`).info;
             console.log('Shiny Mega');
         }
 
         // Mega X/Y
         else if (argss[2].toLowerCase() == 'x' || argss[2].toLowerCase() == 'y' && argss[0].toLowerCase() != 'shiny') {
-            pokemonObject = require(`../../assets/dex/${PID}_${pokemonNameLower}-${argss[0]}-${argss[2]}`).info;
+            pokemonObject = require(`../../assets/dex/${PID}_${pokemonNameLower}-${argss[0]}-${argss[2]}.js`).info;
             console.log('Mega X/Y');
         }
 
         // Shiny Mega X/Y
         else if (argss[3].toLowerCase() == 'x' || argss[3].toLowerCase() == 'y' && argss[0].toLowerCase() == 'shiny') {
-            pokemonObject = require(`../../assets/dex/${PID}_${pokemonNameLower}-${argss[1]}-${argss[3]}`).info;
+            pokemonObject = require(`../../assets/dex/${PID}_${pokemonNameLower}-${argss[1]}-${argss[3]}.js`).info;
             console.log('Shiny Mega X/Y');
         }
 
