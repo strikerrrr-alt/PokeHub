@@ -6,7 +6,7 @@ exports.info = {
     'genderRatio': { M: 0.5, F: 0.5 },
     'catchRate': { integer: 255, percentage: '43.9%' },
     'baseStats': { hp: 40, atk: 45, def: 40, spAtk: 35, spDef: 35, spd: 56 },
-    'abilities': { 0: 'Keen Eye or Tangled Feet', 'H': 'Big Pecks' },
+    'abilities': { 0: 'Keen Eye *or* Tangled Feet', 'H': 'Big Pecks' },
     'height': 0.3,
     'weight': 4.0,
     'colorHex': '#E4B86D',
