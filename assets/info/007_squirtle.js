@@ -1,0 +1,23 @@
+exports.info = {
+    'number': 7,
+    'species': '**Squirtle** (**ゼニガメ** Zenigame)',
+    'types' : 'Water',
+    'pokedexEntry': 'Squirtle\'s shell is not merely used for protection. The shell\'s rounded shape and the grooves on its surface help minimize resistance in water, enabling this Pokémon to swim at high speeds.\n\n*Dex entry from ORAS*',
+    'genderRatio': { M: 0.875, F: 0.125 },
+    'catchRate': { integer: 45, percentage: '11.9%' },
+    'baseStats': { hp: 44, atk: 48, def: 65, spAtk: 50, spDef: 64, spd: 43 },
+    'abilities': { 0: 'Torrent', 'H': 'Rain Dash' },
+    'height': 0.5,
+    'weight': 19.8,
+    'colorHex': '#97D9EC',
+    'colorHexShiny': '#D4FFFF',
+    'color': 'Very Soft Cyan',
+    'colorShiny': 'Very Pale Cyan',
+    'evolvesTo': { species: 'Wartortle', level: '16', triggeredBy: 'Levelling Up' },
+    'eggGroups': ['Monster', 'Water 1'],
+    'hatchTime': '5140 - 5396 steps',
+    'gif': 'http://play.pokemonshowdown.com/sprites/xyani/squirtle.gif',
+    'gifShiny': 'http://play.pokemonshowdown.com/sprites/xyani-shiny/squirtle.gif',
+    'legendary': false,
+    'mythical': false
+};
