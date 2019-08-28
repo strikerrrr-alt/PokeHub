@@ -3,7 +3,7 @@ exports.info = {
     'species': '**Jangmo-o** (**ジャラコ** **jyarako**)',
     'types' : 'Dragon',
     'pokedexEntry': 'It smacks the scales on its head against rocks or against the ground to frighten its opponents. It can also contact its friends with these noises. It will never show an enemy its back in battle. Ancient warriors liked Jangmo-o for its valiant disposition and made it one of their own.\n\n*Dex entry from USUM*',
-    'genderRatio': { M: 50, F: 50 },
+    'genderRatio': { M: 0.5, F: 0.5 },
     'catchRate': { integer: 45, percentage: '11.9%' },
     'baseStats': { hp: 45, atk: 55, def: 65, spAtk: 45, spDef: 45, spd: 45 },
     'abilities': { 0: 'Bulletproof *or* Soundproof', 'H': 'Overcoat' },
@@ -19,3 +19,4 @@ exports.info = {
     'gif': 'https://play.pokemonshowdown.com/sprites/xyani/jangmoo.gif',
     'gifShiny': 'https://play.pokemonshowdown.com/sprites/xyani-shiny/jangmoo.gif',
     'legendary': false,
+};
