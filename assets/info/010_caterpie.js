@@ -1,0 +1,23 @@
+exports.info = {
+    'number': 10,
+    'species': '**Caterpie (**キャタピー** *Kyatapii*)',
+    'types' : 'Bug',
+    'pokedexEntry': 'Perhaps because it would like to grow up quickly, it has a voracious appetite, eating a hundred leaves a day. Its body is soft and weak. In nature, its perpetual fate is to be seen by others as food.\n\n*Dex entry from USUM*',
+    'genderRatio': { M: 0.5, F: 0.5 },
+    'catchRate': { integer: 255, percentage: '43.9%' },
+    'baseStats': { hp: 45, atk: 30, def: 35, spAtk: 20, spDef: 20, spd: 45 },
+    'abilities': { 0: 'Shield Dust', 'H': 'Run Away' },
+    'height': 0.3,
+    'weight': 2.9,
+    'colorHex': '#9EDD76',
+    'colorHexShiny': '#FFFF64',
+    'color': 'Soft Green',
+    'colorShiny': 'Light Yellow',
+    'evolvesTo': { species: 'Metapod', level: '7', triggeredBy: 'Levelling Up' },
+    'eggGroups': ['Bug'],
+    'hatchTime': '3855 - 4111 steps',
+    'gif': 'http://play.pokemonshowdown.com/sprites/xyani/caterpie.gif',
+    'gifShiny': 'http://play.pokemonshowdown.com/sprites/xyani-shiny/caterpie.gif',
+    'legendary': false,
+    'mythical': false
+};
