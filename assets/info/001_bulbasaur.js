@@ -1,4 +1,4 @@
-exports.entry = {
+exports.info = {
     'number': 1,
     'species': '**Bulbasaur** (**フシギダネ** *Fushigidane*)',
     'types' : 'Grass | Poison',
@@ -9,8 +9,10 @@ exports.entry = {
     'abilities': { 0: 'Overgrow', 'H': 'Chlorophyll' },
     'height': 0.7,
     'weight': 15.2,
-    'colorHex': '#40B868',
-    'color': 'Green',
+    'colorHex': '#5EAFAD',
+    'colorHexShiny': '#B8F9A5',
+    'color': 'Dark Moderate Cyan',
+    'colorShiny': 'Very Soft Lime Green',
     'evolvesTo': { species: 'Ivysaur', level: '16', triggeredBy: 'Levelling Up' },
     'eggGroups': ['Monster', 'Grass'],
     'hatchTime': '5140 - 5396 steps',

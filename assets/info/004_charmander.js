@@ -1,4 +1,4 @@
-exports.entry = {
+exports.info = {
     'number': 4,
     'species': '*Charmander* (**ヒトカゲ** *Hitokage*)',
     'types' : 'Fire',
@@ -9,8 +9,10 @@ exports.entry = {
     'abilities': { 0: 'Blaze', 'H': 'Solar Power' },
     'height': 0.6,
     'weight': 18.7,
-    'colorHex': '#F05868',
-    'color': 'Red',
+    'colorHex': '#F3B184',
+    'colorHexShiny': '#FFFF89',
+    'color': 'Soft Orange',
+    'colorShiny': 'Light Yellow',
     'evolvesTo': { species: 'Charmeleon', level: '16', triggeredBy: 'Levelling Up' },
     'eggGroups': ['Monster', 'Dragon'],
     'hatchTime': '5140 - 5396 steps',

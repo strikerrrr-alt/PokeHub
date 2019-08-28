@@ -1,4 +1,4 @@
-exports.entry = {
+exports.info = {
     'number': 3,
     'species': '**Venusaur** (**フシギバナ** *Fushigibana*)',
     'types' : 'Grass | Poison',
@@ -9,8 +9,10 @@ exports.entry = {
     'abilities': { 0: 'Overgrow', 'H': 'Chlorophyll' },
     'height': 2.0,
     'weight': 220.5,
-    'colorHex': '#40B868',
-    'color': 'Green',
+    'colorHex': '#5EAFAD',
+    'colorHexShiny': '#B8F9A5',
+    'color': 'Dark Moderate Cyan',
+    'colorShiny': 'Very Soft Lime Green',
     'evolvesFrom': { species: 'Ivysaur', level: '32', triggeredBy: 'Levelling Up' },
     'eggGroups': ['Monster', 'Grass'],
     'hatchTime': '5140 - 5396 steps',

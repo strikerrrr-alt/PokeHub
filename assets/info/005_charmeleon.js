@@ -1,4 +1,4 @@
-exports.entry = {
+exports.info = {
     'number': 5,
     'species': '**Charmeleon** (**リザード** Rizaado)',
     'types' : 'Fire',
@@ -9,8 +9,10 @@ exports.entry = {
     'abilities': { 0: 'Blaze', 'H': 'Solar Power' },
     'height': 1.1,
     'weight': 41.9,
-    'colorHex': '#F05868',
-    'color': 'Red',
+    'colorHex': '#EB8A76',
+    'colorHexShiny': '#FFFF89',
+    'color': 'Soft Red',
+    'colorShiny': 'Light Yellow',
     'evolvesTo': { species: 'Charizard', level: '32', triggeredBy: 'Levelling Up' },
     'evolvesFrom': { species: 'Charmander', level: '16', triggeredBy: 'Levelling Up' },
     'eggGroups': ['Monster', 'Dragon'],

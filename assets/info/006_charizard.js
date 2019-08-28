@@ -1,4 +1,4 @@
-exports.entry = {
+exports.info = {
     'number': 6,
     'species': '**Charizard** (**リザードン** Rizaadon)',
     'types' : 'Fire | Flying',
@@ -9,9 +9,12 @@ exports.entry = {
     'abilities': { 0: 'Blaze', 'H': 'Solar Power' },
     'height': 1.7,
     'weight': 199.5,
-    'colorHex': '#F05868',
-    'color': 'Red',
+    'colorHex': '#F08030',
+    'colorHexShiny': '#6B6D73',
+    'color': 'Bright Orange',
+    'colorShiny': 'Dark Greyish Blue',
     'evolvesFrom': { species: 'Charmeleon', level: '32', triggeredBy: 'Levelling Up' },
+    'evolvesTo': { species: 'Mega Charizard X/Y', level: null, triggeredBy: 'Mega Evolution with Charizardite X/Y' },
     'eggGroups': ['Monster', 'Dragon'],
     'hatchTime': '5140 - 5396 steps',
     'gif': 'http://play.pokemonshowdown.com/sprites/xyani/charizard.gif',
