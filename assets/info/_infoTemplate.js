@@ -1,4 +1,4 @@
-exports.entry = {
+exports.info = {
     'number': 0,
     'species': 'Null',
     'types' : 'Null | Null',
@@ -6,11 +6,13 @@ exports.entry = {
     'genderRatio': { M: 0, F: 0 },
     'catchRate': { integer: 0, percentage: '0%' },
     'baseStats': { hp: 0, atk: 0, def: 0, spAtk: 0, spDef: 0, spd: 0 },
-    'abilities': { 0: 'Null', 1: 'Null', 'H': 'Null' },
+    'abilities': { 0: 'Null', 1: 'Null', 'H': 'Null', 'M': null },
     'height': 0.0,
     'weight': 0.0,
     'colorHex': '#ffffff',
+    'colorHexShiny': '#ffffaa',
     'color': 'White',
+    'colorShiny': 'Beige',
     'evolvesTo': { species: 'Null', level: 'Null', triggeredBy: 'Null' },
     'evolvesFrom': { species: 'Null', level: 'Null', triggeredBy: 'Null' },
     'eggGroups': ['Null', 'Null'],
