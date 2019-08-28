@@ -1,0 +1,23 @@
+exports.info = {
+    'number': 13,
+    'species': '**Weedle** (**ビードル** *Biidoru*)',
+    'types' : 'Bug | Poison',
+    'pokedexEntry': 'Weedle has an extremely acute sense of smell. It is capable of distinguishing its favorite kinds of leaves from those it dislikes just by sniffing with its big red proboscis (nose).\n\n*Dex entry from ORAS*',
+    'genderRatio': { M: 0.5, F: 0.5 },
+    'catchRate': { integer: 255, percentage: '43.9%' },
+    'baseStats': { hp: 40, atk: 35, def: 30, spAtk: 20, spDef: 20, spd: 50 },
+    'abilities': { 0: 'Shield Dust', 'H': 'Run Away' },
+    'height': 0.3,
+    'weight': 3.2,
+    'colorHex': '#FFE09D',
+    'colorHexShiny': '#FFFF8E',
+    'color': 'Pale Orange',
+    'colorShiny': 'Very Light Yellow',
+    'evolvesTo': { species: 'Kakuna', level: '7', triggeredBy: 'Levelling Up' },
+    'eggGroups': ['Bug'],
+    'hatchTime': '3855 - 4111 steps',
+    'gif': 'http://play.pokemonshowdown.com/sprites/xyani/weedle.gif',
+    'gifShiny': 'http://play.pokemonshowdown.com/sprites/xyani-shiny/weedle.gif',
+    'legendary': false,
+    'mythical': false
+};
