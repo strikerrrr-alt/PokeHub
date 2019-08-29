@@ -1,6 +1,6 @@
 exports.info = {
     'number': 359,
-    'species': '**Absol** (**アブソル** **Absol**',
+    'species': '**Absol** (**アブソル** **Absusoru**',
     'types' : 'Dark',
     'pokedexEntry': 'The only thing unlucky about Absol is its appearance. It protects fields and warns people of disaster, so one ought to be grateful for it. The elderly call it the disaster Pokémon and detest it, but interest in its power to predict disasters is on the rise.\n\n*Dex entry from USUM*',
     'genderRatio': { M: 0.5, F: 0.5 },
