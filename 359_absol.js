@@ -1,0 +1,23 @@
+exports.info = {
+    'number': 359,
+    'species': '**Absol** (**アブソル** **Absol**',
+    'types' : 'Dark',
+    'pokedexEntry': 'The only thing unlucky about Absol is its appearance. It protects fields and warns people of disaster, so one ought to be grateful for it. The elderly call it the disaster Pokémon and detest it, but interest in its power to predict disasters is on the rise.\n\n*Dex entry from USUM*',
+    'genderRatio': { M: 0.5, F: 0.5 },
+    'catchRate': { integer: 30, percentage: '8.8%' },
+    'baseStats': { hp: 65, atk: 130, def: 60, spAtk: 75, spDef: 60, spd: 75 },
+    'abilities': { 0: 'Pressure *or* Super Luck', 'H': 'Justified', 'M': Magic Bounce },
+    'height': 1.2,
+    'weight': 103.6,
+    'colorHex': '#F5F6FA',
+    'colorHexShiny': '#F5F6FA',
+    'color': 'Light Grayish Blue',
+    'colorShiny': 'Light Grayish Blue',
+    'evolvesTo': { species: 'Mega Absol', level: 'Null', triggeredBy: 'Mega Evolution With Absolite' },
+    'eggGroups': ['Field'],
+    'hatchTime': '6425 - 6681 steps',
+    'gif': 'https://play.pokemonshowdown.com/sprites/xyani/absol.gif',
+    'gifShiny': 'https://play.pokemonshowdown.com/sprites/xyani-shiny/absol.gif',
+    'legendary': false,
+    'mythical': false
+};
