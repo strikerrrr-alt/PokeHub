@@ -13,7 +13,7 @@ exports.info = {
     'colorHexShiny': '#F5F6FA',
     'color': 'Light Grayish Blue',
     'colorShiny': 'Light Grayish Blue',
-    'evolvesTo': { species: 'Mega Absol', level: 'Null', triggeredBy: 'Mega Evolution With Absolite' },
+    'evolvesTo': { species: 'Mega Absol', level: null, triggeredBy: 'Mega Evolution With Absolite' },
     'eggGroups': ['Field'],
     'hatchTime': '6425 - 6681 steps',
     'gif': 'https://play.pokemonshowdown.com/sprites/xyani/absol.gif',
