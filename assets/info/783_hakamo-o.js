@@ -1,6 +1,6 @@
 exports.info = {
     'number': 783,
-    'species': '**Hakamo-o** (**ジャランゴ** **jyarango**',
+    'species': '**Hakamo-o** (**ジャランゴ** **jyarango**)',
     'types' : 'Dragon | Fighting',
     'pokedexEntry': 'It makes noise by clanging its scales together. When the rhythm has reached its peak, Hakamo-o attacks. The scales it sheds can be molded and processed to make pots and pans. They conduct heat well, so they're a popular item.\n\n*Dex entry from USUM*',
     'genderRatio': { M: 0.5, F: 0.5 },
