@@ -1,0 +1,22 @@
+exports.info = {
+    'number': 131,
+    'species': '**Lapras** (**ラプラス** **Lapurasu**)',
+    'types' : 'Water | Ice',
+    'pokedexEntry': 'It likes swimming around with people on its back. In the Alola region, it\'s an important means of transportation over water. They\'ve been so cherished that there\'s now an overabundance. The fish Pokémon population has declined in waters with too many Lapras.\n\n*Dex entry from USUM*',
+    'genderRatio': { M: 0.5, F: 0.5 },
+    'catchRate': { integer: 45, percentage: '11.9%' },
+    'baseStats': { hp: 130, atk: 85, def: 80, spAtk: 85, spDef: 95, spd: 60 },
+    'abilities': { 0: 'Water Absorb *or* Shell Armor', 'H': 'Hydration' },
+    'height': 2.5,
+    'weight': 485.0,
+    'colorHex': '#BE98FD',
+    'colorHexShiny': '#6CBFE7', 
+    'color': 'Soft Blue',
+    'colorShiny': 'Very Soft Violet',
+    'eggGroups': ['Monster', 'Water 1'],
+    'hatchTime': '10280 - 10536 steps',
+    'gif': 'https://play.pokemonshowdown.com/sprites/xyani/lapras.gif',
+    'gifShiny': 'https://play.pokemonshowdown.com/sprites/xyani-shiny/lapras.gif',
+    'legendary': false,
+    'mythical': false
+};
