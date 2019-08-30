@@ -1,3 +1,4 @@
+exports.entry = {
     'number': 286,
     'species': '**Breloom** (**キノガッサ** **Kinogassa**)',
     'types' : 'Grass | Fighting',
