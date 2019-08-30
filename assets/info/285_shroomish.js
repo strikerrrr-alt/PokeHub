@@ -1,3 +1,4 @@
+exports.entry = {
     'number': 285,
     'species': '**Shroomish**(**キノココ** **Kinokoko**)',
     'types' : 'Grass',
