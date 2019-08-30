@@ -1,4 +1,4 @@
-exports.entry = {
+exports.info = {
     'number': 285,
     'species': '**Shroomish**(**キノココ** **Kinokoko**)',
     'types' : 'Grass',
