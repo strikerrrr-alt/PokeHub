@@ -1,0 +1,23 @@
+exports.info = {
+    'number': 078,
+    'species': '**Rapidash** (**ギャロップ** **Gallop**)',
+    'types' : 'Fire',
+    'pokedexEntry': 'Rapidash usually can be seen casually cantering in the fields and plains. However, when this Pokémon turns serious, its fiery manes flare and blaze as it gallops its way up to 150 mph.\n\n*Dex entry from ORAS*',
+    'genderRatio': { M: 0.5, F: 0.5 },
+    'catchRate': { integer: 60, percentage: '14.8%' },
+    'baseStats': { hp: 65, atk: 100, def: 70, spAtk: 80, spDef: 80, spd: 105 },
+    'abilities': { 0: 'Run Away *or* Flash Fire', 'H': 'Flame Body' },
+    'height': 1.7,
+    'weight': 209.4,
+    'colorHex': '#F9ECAB',
+    'colorHexShiny': '#F9ECAB',
+    'color': 'Very Soft Yellow',
+    'colorShiny': 'Very Soft Yellow',
+    'evolvesFrom': { species: 'Ponyta', level: '40', triggeredBy: 'Levelling Up' },
+    'eggGroups': ['Field'],
+    'hatchTime': '5140 - 5396 steps',
+    'gif': 'https://play.pokemonshowdown.com/sprites/xyani/rapidash.gif',
+    'gifShiny': 'https://play.pokemonshowdown.com/sprites/xyani-shiny/rapidash.gif',
+    'legendary': false,
+    'mythical': false
+};
