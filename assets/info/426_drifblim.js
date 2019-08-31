@@ -1,0 +1,23 @@
+exports.info = {
+    'number': 426,
+    'species': '**Drifblim** (**フワライド** **Fuwaride**)',
+    'types' : 'Ghost | Flying',
+    'pokedexEntry': 'There\'s a rumor that if you catch a Drifblim floating on the wind at dusk, you\'ll be carried away to the afterlife.\n\n*Dex entry from USUM*',
+    'genderRatio': { M: 0.5, F: 0.5 },
+    'catchRate': { integer: 60, percentage: '14.8%' },
+    'baseStats': { hp: 150, atk: 80, def: 44, spAtk: 90, spDef: 54, spd: 80 },
+    'abilities': { 0: 'Aftermath *or* Unburden', 'H': 'Flare Boost' },
+    'height': 1.2,
+    'weight': 33.1,
+    'colorHex': '#A988B6',
+    'colorHexShiny': '#F9EC76',
+    'color': 'Slightly Desaturated Violet',
+    'colorShiny': 'Soft Yellow',
+    'evolvesFrom': { species: 'Drifloom', level: '28', triggeredBy: 'Levelling Up' },
+    'eggGroups': ['Amorphous'],
+    'hatchTime': '7710 - 7966 steps',
+    'gif': 'https://play.pokemonshowdown.com/sprites/xyani/drifblim.gif',
+    'gifShiny': 'https://play.pokemonshowdown.com/sprites/xyani-shiny/drifblim.gif',
+    'legendary': false,
+    'mythical': false
+};
