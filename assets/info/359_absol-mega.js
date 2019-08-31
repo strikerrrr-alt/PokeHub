@@ -6,7 +6,7 @@ exports.info = {
     'genderRatio': { M: 0.5, F: 0.5 },
     'catchRate': { integer: 30, percentage: '8.8%' },
     'baseStats': { hp: 65, atk: 150, def: 60, spAtk: 115, spDef: 60, spd: 115 },
-    'abilities': { 0: 'Pressure *or* Super Luck', 'H': 'Justified', 'M': Magic Bounce },
+    'abilities': { 0: 'Pressure *or* Super Luck', 'H': 'Justified', 'M': 'Magic Bounce' },
     'height': 1.2,
     'weight': 108.0,
     'colorHex': '#F5F6FA',
