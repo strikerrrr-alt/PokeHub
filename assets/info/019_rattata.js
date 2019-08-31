@@ -1,0 +1,23 @@
+exports.info = {
+    'number': 019,
+    'species': '**Rattata** (**コラッタ** **Koratta**)',
+    'types' : 'Normal',
+    'pokedexEntry': 'Its incisors grow continuously throughout its life. If its incisors get too long, this Pokémon becomes unable to eat, and it starves to death.This Pokémon is common but hazardous. Its sharp incisors can easily cut right through hard wood.\n\n*Dex entry from USUM*',
+    'genderRatio': { M: 0.5, F: 0.5 },
+    'catchRate': { integer: 255, percentage: '43.9%' },
+    'baseStats': { hp: 30, atk: 56, def: 35, spAtk: 25, spDef: 35, spd: 72 },
+    'abilities': { 0: 'Run Away *or* Guts', 'H': 'Hustle' },
+    'height': 0.3,
+    'weight': 40.8,
+    'colorHex': '#C4A0D8',
+    'colorHexShiny': '#CBD5A0',
+    'color': 'Slightly Desaturated Violet',
+    'colorShiny': 'Grayish Yellow',
+    'evolvesTo': { species: 'Raticate', level: '20', triggeredBy: 'Levelling Up' },
+    'eggGroups': ['Field'],
+    'hatchTime': '3855 - 4111 steps',
+    'gif': 'https://play.pokemonshowdown.com/sprites/xyani/rattata.gif',
+    'gifShiny': 'https://play.pokemonshowdown.com/sprites/xyani-shiny/rattata.gif',
+    'legendary': false,
+    'mythical': false
+};
