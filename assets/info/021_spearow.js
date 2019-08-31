@@ -1,0 +1,23 @@
+exports.info = {
+    'number': 021,
+    'species': '**Spearow** (**オニスズメ** **Onisuzume**)',
+    'types' : 'Normal | Flying',
+    'pokedexEntry': 'Its reckless nature leads it to stand up to others—even large Pokémon—if it has to protect its territory. Due to its short wings, it can\'t fly long distances. It wanders about restlessly and pecks at bug Pokémon.\n\n*Dex entry from USUM*',
+    'genderRatio': { M: 0.5, F: 0.5 },
+    'catchRate': { integer: 255, percentage: '43.9%' },
+    'baseStats': { hp: 40, atk: 60, def: 30, spAtk: 31, spDef: 31, spd: 70 },
+    'abilities': { 0: 'Keen Eye', 'H': 'Sniper' },
+    'height': 0.3,
+    'weight': 4.4,
+    'colorHex': '#CA8562',
+    'colorHexShiny': '#E2DA6D',
+    'color': 'Moderate Orange',
+    'colorShiny': 'Soft Yellow',
+    'evolvesTo': { species: 'Fearow', level: '20', triggeredBy: 'Levelling Up' },
+    'eggGroups': ['Flying'],
+    'hatchTime': '3855 - 4111 steps',
+    'gif': 'https://play.pokemonshowdown.com/sprites/xyani/spearow.gif',
+    'gifShiny': 'https://play.pokemonshowdown.com/sprites/xyani-shiny/spearow.gif',
+    'legendary': false,
+    'mythical': false
+};
