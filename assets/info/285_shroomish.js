@@ -2,7 +2,7 @@ exports.info = {
     'number': 285,
     'species': '**Shroomish**(**キノココ** **Kinokoko**)',
     'types' : 'Grass',
-    'pokedexEntry': 'Shroomish live in damp soil in the dark depths of forests. They are often found keeping still under fallen leaves. This Pokémon feeds on compost that is made up of fallen, rotted leaves. If Shroomish senses danger, it shakes its body and scatters spores from the top of its head. This Pokémon\’s spores are so toxic, they make trees and weeds wilt.\n\n*Dex entry from ORAS*',
+    'pokedexEntry': 'Shroomish live in damp soil in the dark depths of forests. They are often found keeping still under fallen leaves. This Pokémon feeds on compost that is made up of fallen, rotted leaves. If Shroomish senses danger, it shakes its body and scatters spores from the top of its head. This Pokémon\'s spores are so toxic, they make trees and weeds wilt.\n\n*Dex entry from ORAS*',
     'genderRatio': { M: 0.5, F: 0.5 },
     'catchRate': { integer: 255, percentage: '43.9%' },
     'baseStats': { hp: 60, atk: 40, def: 60, spAtk: 40, spDef: 60, spd: 35 },

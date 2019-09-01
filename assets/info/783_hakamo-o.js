@@ -6,7 +6,7 @@ exports.info = {
     'genderRatio': { M: 0.5, F: 0.5 },
     'catchRate': { integer: 45, percentage: '11.9%' },
     'baseStats': { hp: 55, atk: 75, def: 90, spAtk: 65, spDef: 70, spd: 65 },
-    'abilities': { 0: 'Bulletproof *or* Soundproof', 'H': 'Overcoat'},
+    'abilities': { 0: 'Bulletproof *or* Soundproof', 'H': 'Overcoat' },
     'height': 1.2,
     'weight': 103.6,
     'colorHex': '#C2BEB8',
