@@ -2,7 +2,7 @@ exports.info = {
     'number': 28,
     'species': '**Sandslash** (**サンドパン** **Sandpan**)',
     'types' : 'Ground',
-    'pokedexEntry': 'Its claws and horns often break off. The broken claws and horns can be used to carve plows for tilling farm fields. Thanks to its thick claws, it's good at climbing trees. There are plenty of Sandslash that park themselves in trees and go right to sleep.\n\n*Dex entry from USUM*',
+    'pokedexEntry': 'Its claws and horns often break off. The broken claws and horns can be used to carve plows for tilling farm fields. Thanks to its thick claws, it\'s good at climbing trees. There are plenty of Sandslash that park themselves in trees and go right to sleep.\n\n*Dex entry from USUM*',
     'genderRatio': { M: 0.5, F: 0.5 },
     'catchRate': { integer: 90, percentage: '20.1%' },
     'baseStats': { hp: 75, atk: 100, def: 110, spAtk: 45, spDef: 55, spd: 65 },
