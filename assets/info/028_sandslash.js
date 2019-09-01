@@ -14,7 +14,6 @@ exports.info = {
     'color': 'Moderate Orange',
     'colorShiny': 'Dark Red',
     'evolvesFrom': { species: 'Sandshrew', level: '22', triggeredBy: 'Levelling Up' },
-    'evolvesFrom': { species: 'Sandshrew', level: 'Null', triggeredBy: 'Evolution with Ice Stone' },
     'eggGroups': ['Field'],
     'hatchTime': '5140 - 5396 steps',
     'gif': 'https://play.pokemonshowdown.com/sprites/xyani/sandslash.gif',
