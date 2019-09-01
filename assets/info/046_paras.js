@@ -1,8 +1,8 @@
 exports.info = {
-    'number': 046,
+    'number': 46,
     'species': '**Paras** (**パラス** **Paras**)',
     'types' : 'Bug | Grass',
-    'pokedexEntry': 'Whether it\'s due to a lack of moisture or a lack of nutrients, in Alola the mushrooms on Paras don't grow up quite right. The mushrooms, known as tochukaso, are controlling the bug. Even if the bug bugs the mushrooms, they tell it to bug off.\n\n*Dex entry from USUM*',
+    'pokedexEntry': 'Whether it\'s due to a lack of moisture or a lack of nutrients, in Alola the mushrooms on Paras don\'t grow up quite right. The mushrooms, known as tochukaso, are controlling the bug. Even if the bug bugs the mushrooms, they tell it to bug off.\n\n*Dex entry from USUM*',
     'genderRatio': { M: 0.5, F: 0.5 },
     'catchRate': { integer: 190, percentage: '35.2%' },
     'baseStats': { hp: 35, atk: 70, def: 55, spAtk: 45, spDef: 55, spd: 25 },
