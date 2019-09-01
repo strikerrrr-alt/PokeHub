@@ -1,0 +1,23 @@
+exports.info = {
+    'number': 046,
+    'species': '**Paras** (**パラス** **Paras**)',
+    'types' : 'Bug | Grass',
+    'pokedexEntry': 'Whether it\'s due to a lack of moisture or a lack of nutrients, in Alola the mushrooms on Paras don't grow up quite right. The mushrooms, known as tochukaso, are controlling the bug. Even if the bug bugs the mushrooms, they tell it to bug off.\n\n*Dex entry from USUM*',
+    'genderRatio': { M: 0.5, F: 0.5 },
+    'catchRate': { integer: 190, percentage: '35.2%' },
+    'baseStats': { hp: 35, atk: 70, def: 55, spAtk: 45, spDef: 55, spd: 25 },
+    'abilities': { 0: 'Effect Spore *or* Dry Skin', 'H': 'Damp' },
+    'height': 0.3,
+    'weight': 11.9,
+    'colorHex': '#FDBE5C',
+    'colorHexShiny': '#FE865A',
+    'color': 'Soft Orange',
+    'colorShiny': 'Soft Orange',
+    'evolvesTo': { species: 'Parasect', level: '24', triggeredBy: 'Levelling Up' },
+    'eggGroups': ['Bug', 'Grass'],
+    'hatchTime': '5140 - 5396 steps',
+    'gif': 'https://play.pokemonshowdown.com/sprites/xyani/paras.gif',
+    'gifShiny': 'https://play.pokemonshowdown.com/sprites/xyani-shiny/paras.gif',
+    'legendary': false,
+    'mythical': false
+};
