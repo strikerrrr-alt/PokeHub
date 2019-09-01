@@ -1,5 +1,5 @@
 exports.info = {
-    'number': 028,
+    'number': 28,
     'species': '**Alolan Sandslash** (**サンドパン** **Sandpan**)',
     'types' : 'Ice | Steel',
     'pokedexEntry': 'It runs across snow-covered plains at high speeds. It developed thick, sharp claws to plow through the snow. A long, long time ago, it lived in the desert. With its sharp claws fully extended, it can climb right up an iceberg without slipping.\n\n*Dex entry from USUM*',
@@ -13,7 +13,7 @@ exports.info = {
     'colorHexShiny': '#A7EDFE',
     'color': 'Very Soft Cyan',
     'colorShiny': 'Very Soft Cyan',
-    'evolvesFrom': { species: 'Alolan Sandshrew', level: 'Null', triggeredBy: 'Evolution with Ice Stone' },
+    'evolvesFrom': { species: 'Alolan Sandshrew', level: null, triggeredBy: 'Evolution with Ice Stone' },
     'eggGroups': ['Field'],
     'hatchTime': '5140 - 5396 steps',
     'gif': 'https://play.pokemonshowdown.com/sprites/xyani/sandslash-alola.gif',
