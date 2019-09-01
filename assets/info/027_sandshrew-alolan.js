@@ -1,5 +1,5 @@
 exports.info = {
-    'number': 027,
+    'number': 27,
     'species': '**Alolan Sandshrew** (**サンド** **Sand**)',
     'types' : 'Ice | Steel',
     'pokedexEntry': 'After fleeing a volcanic eruption, it ended up moving to an area of snowy mountains. Its ice shell is as hard as steel. The skin on its back is as hard as steel. Predators go after its soft belly, so it clings to the ground desperately.\n\n*Dex entry from USUM*',
