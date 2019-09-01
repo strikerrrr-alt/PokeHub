@@ -1,0 +1,23 @@
+exports.info = {
+    'number': 172,
+    'species': '**Pichu** (**ピチュー** **Pichu**)',
+    'types' : 'Electric',
+    'pokedexEntry': 'It still can\'t use electricity well. When it\'s surprised or excited, it discharges electricity unintentionally. It has electric sacs in its cheeks. When they\'re fully charged, Pichu plays very energetically.\n\n*Dex entry from USUM*',
+    'genderRatio': { M: 0.5, F: 0.5 },
+    'catchRate': { integer: 190, percentage: '35.2%' },
+    'baseStats': { hp: 20, atk: 40, def: 15, spAtk: 35, spDef: 35, spd: 60 },
+    'abilities': { 0: 'Static', 'H': 'Lightning Rod' },
+    'height': 0.3,
+    'weight': 4.4,
+    'colorHex': '#FDF193',
+    'colorHexShiny': '#F8DE57',
+    'color': 'Very Soft Yellow',
+    'colorShiny': 'Soft Yellow',
+    'evolvesTo': { species: 'Pikachu', level: 'Null', triggeredBy: 'Evolution with High Friendship' },
+    'eggGroups': ['Undiscovered'],
+    'hatchTime': '2570 - 2826 steps',
+    'gif': 'https://play.pokemonshowdown.com/sprites/xyani/pichu.gif',
+    'gifShiny': 'https://play.pokemonshowdown.com/sprites/xyani-shiny/pichu.gif',
+    'legendary': false,
+    'mythical': false
+};
