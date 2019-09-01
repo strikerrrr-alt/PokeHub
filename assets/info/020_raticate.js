@@ -1,0 +1,23 @@
+exports.info = {
+    'number': 020,
+    'species': '**Raticate** (**ラッタ** **Ratta**)',
+    'types' : 'Normal',
+    'pokedexEntry': 'People say that it fled from its enemies by using its small webbed hind feet to swim from island to island in Alola. Its whiskers are essential for maintaining its balance. No matter how friendly you are, it will get angry and bite you if you touch its whiskers.\n\n*Dex entry from USUM*',
+    'genderRatio': { M: 0.5, F: 0.5 },
+    'catchRate': { integer: 127, percentage: '26%' },
+    'baseStats': { hp: 55, atk: 81, def: 60, spAtk: 50, spDef: 70, spd: 97 },
+    'abilities': { 0: 'Run Away *or* Guts', 'H': 'Hustle' },
+    'height': 0.7,
+    'weight': 40.8,
+    'colorHex': '#E9B14C',
+    'colorHexShiny': '#DE6848',
+    'color': 'Soft Orange',
+    'colorShiny': 'Soft Red',
+    'evolvesFrom': { species: 'Rattata', level: '20', triggeredBy: 'Levelling Up' },
+    'eggGroups': ['Field'],
+    'hatchTime': '3855 - 4111 steps',
+    'gif': 'https://play.pokemonshowdown.com/sprites/xyani/raticate.gif',
+    'gifShiny': 'https://play.pokemonshowdown.com/sprites/xyani-shiny/raticate.gif',
+    'legendary': false,
+    'mythical': false
+};
