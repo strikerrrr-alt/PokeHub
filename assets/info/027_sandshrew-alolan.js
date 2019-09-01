@@ -1,0 +1,23 @@
+exports.info = {
+    'number': 27,
+    'species': '**Alolan Sandshrew** (**サンド** **Sand**)',
+    'types' : 'Ice | Steel',
+    'pokedexEntry': 'After fleeing a volcanic eruption, it ended up moving to an area of snowy mountains. Its ice shell is as hard as steel. The skin on its back is as hard as steel. Predators go after its soft belly, so it clings to the ground desperately.\n\n*Dex entry from USUM*',
+    'genderRatio': { M: 0.5, F: 0.5 },
+    'catchRate': { integer: 255, percentage: '43.9%' },
+    'baseStats': { hp: 50, atk: 75, def: 90, spAtk: 10, spDef: 35, spd: 40 },
+    'abilities': { 0: 'Snow Cloak', 'H': 'Slush Rush' },
+    'height': 0.7,
+    'weight': 88.2,
+    'colorHex': '#FEFFFF',
+    'colorHexShiny': '#FEFFFF',
+    'color': 'Very Pale (Mostly White) Cyan',
+    'colorShiny': 'Very Pale (Mostly White) Cyan',
+    'evolvesTo': { species: 'Alolan Sandslash', level: 'Null', triggeredBy: 'Evolution with Ice Stone' },
+    'eggGroups': ['Field'],
+    'hatchTime': '5140 - 5396 steps',
+    'gif': 'https://play.pokemonshowdown.com/sprites/xyani/sandshrew-alola.gif',
+    'gifShiny': 'https://play.pokemonshowdown.com/sprites/xyani-shiny/sandshrew-alola.gif',
+    'legendary': false,
+    'mythical': false
+};
