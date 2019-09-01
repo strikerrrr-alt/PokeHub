@@ -1,5 +1,5 @@
 exports.info = {
-    'number': 058,
+    'number': 58,
     'species': '**Growlithe** (**ガーディ** **Gaadii**)',
     'types' : 'Fire',
     'pokedexEntry': 'While it\'s quite friendly toward humans once it\'s grown used to them, in the wild it must be quite fierce to defend its territory from Rockruff. It has lived alongside humans since ages ago. Its bones have been found in excavations of ruins from the Stone Age.\n\n*Dex entry from USUM*',

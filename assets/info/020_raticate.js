@@ -1,5 +1,5 @@
 exports.info = {
-    'number': 020,
+    'number': 20,
     'species': '**Raticate** (**ラッタ** **Ratta**)',
     'types' : 'Normal',
     'pokedexEntry': 'People say that it fled from its enemies by using its small webbed hind feet to swim from island to island in Alola. Its whiskers are essential for maintaining its balance. No matter how friendly you are, it will get angry and bite you if you touch its whiskers.\n\n*Dex entry from USUM*',

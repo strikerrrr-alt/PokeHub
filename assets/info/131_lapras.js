@@ -10,7 +10,7 @@ exports.info = {
     'height': 2.5,
     'weight': 485.0,
     'colorHex': '#BE98FD',
-    'colorHexShiny': '#6CBFE7', 
+    'colorHexShiny': '#6CBFE7',
     'color': 'Soft Blue',
     'colorShiny': 'Very Soft Violet',
     'eggGroups': ['Monster', 'Water 1'],

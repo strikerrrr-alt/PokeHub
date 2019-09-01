@@ -1,5 +1,5 @@
 exports.info = {
-    'number': 022,
+    'number': 22,
     'species': '**Fearow** (**オニドリル** **Onidrill**)',
     'types' : 'Normal | Flying',
     'pokedexEntry': 'Carrying food through Fearow\'s territory is dangerous. It will snatch the food away from you in a flash! In Alola, fish Pokémon are its prey. It can be seen circling above the ocean searching for food.\n\n*Dex entry from USUM*',

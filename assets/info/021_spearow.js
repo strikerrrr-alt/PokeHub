@@ -1,5 +1,5 @@
 exports.info = {
-    'number': 021,
+    'number': 21,
     'species': '**Spearow** (**オニスズメ** **Onisuzume**)',
     'types' : 'Normal | Flying',
     'pokedexEntry': 'Its reckless nature leads it to stand up to others—even large Pokémon—if it has to protect its territory. Due to its short wings, it can\'t fly long distances. It wanders about restlessly and pecks at bug Pokémon.\n\n*Dex entry from USUM*',
