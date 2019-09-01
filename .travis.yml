@@ -1,0 +1,10 @@
+language: node_js
+node_js:
+  "10"
+script: npm test
+notifications:
+  email:
+    recipients:
+      - zzstrikerzzyt@gmail.com
+    on_success: never 
+    on_failure: always 
