@@ -1,0 +1,23 @@
+exports.info = {
+    'number': 019,
+    'species': '**Alolan Rattata** (**コラッタ** **Koratta**)',
+    'types' : 'Dark | Normal',
+    'pokedexEntry': 'It shows no interest in anything that isn\'t fresh. If you take it shopping with you, it will help you pick out ingredients. Night after night, they sneak into people\'s homes seeking food. A massive outbreak of them has become an issue of public concern.\n\n*Dex entry from USUM*',
+    'genderRatio': { M: 0.5, F: 0.5 },
+    'catchRate': { integer: 255, percentage: '43.9%' },
+    'baseStats': { hp: 30, atk: 56, def: 35, spAtk: 25, spDef: 35, spd: 72 },
+    'abilities': { 0: 'Gluttony *or* Hustle', 'H': 'Thick Fat' },
+    'height': 0.3,
+    'weight': 8.4,
+    'colorHex': '#6B6C63',
+    'colorHexShiny': '#934A54',
+    'color': 'Very Dark Grayish Yellow',
+    'colorShiny': 'Dark Moderate Red',
+    'evolvesTo': { species: 'Alolan Raticate', level: '20', triggeredBy: 'Levelling Up at Night' },
+    'eggGroups': ['Field'],
+    'hatchTime': '3855 - 4111 steps',
+    'gif': 'https://play.pokemonshowdown.com/sprites/xyani/rattata-alola.gif',
+    'gifShiny': 'https://play.pokemonshowdown.com/sprites/xyani-shiny/rattata-alola.gif',
+    'legendary': false,
+    'mythical': false
+};
