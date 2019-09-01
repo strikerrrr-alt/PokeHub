@@ -1,0 +1,23 @@
+exports.info = {
+    'number': 023,
+    'species': '**Ekans** (**アーボ** **Arbo**)',
+    'types' : 'Poison',
+    'pokedexEntry': 'By dislocating its jaw, it can swallow prey larger than itself. After a meal, it curls up and rests. The eggs of bird Pokémon are its favorite food. It swallows eggs whole, so sometimes an egg gets stuck, and Ekans faints.\n\n*Dex entry from USUM*',
+    'genderRatio': { M: 0.5, F: 0.5 },
+    'catchRate': { integer: 255, percentage: '43.9%' },
+    'baseStats': { hp: 35, atk: 60, def: 44, spAtk: 40, spDef: 54, spd: 55 },
+    'abilities': { 0: 'Intimidate *or* Shed Skin', 'H': 'Unnerve' },
+    'height': 2.0,
+    'weight': 15.2,
+    'colorHex': '#C898C7',
+    'colorHexShiny': '#B1BF8B',
+    'color': 'Grayish Magenta',
+    'colorShiny': 'Slightly Desaturated Green',
+    'evolvesTo': { species: 'Arbok', level: '22', triggeredBy: 'Levelling Up' },
+    'eggGroups': ['Field', 'Dragon'],
+    'hatchTime': '5140 - 5396 steps',
+    'gif': 'https://play.pokemonshowdown.com/sprites/xyani/ekans.gif',
+    'gifShiny': 'https://play.pokemonshowdown.com/sprites/xyani-shiny/ekans.gif',
+    'legendary': false,
+    'mythical': false
+};
