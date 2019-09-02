@@ -1,5 +1,5 @@
 exports.forms = [
-    'Ultra',
-    'Alolan',
-    'School'
+    'ultra',
+    'alolan',
+    'school'
 ];
