@@ -70,12 +70,12 @@ class InfoCommand extends Command {
         }
 
         // Other Forms
-        else if (forms.includes(argss[0].toLowerCase()) && argss[0].toLowerCase() != 'shiny' && !argss[2] && !args[3]) {
+        else if (forms.includes(argss[0].toLowerCase()) == true && argss[0].toLowerCase() != 'shiny' && !argss[2] && !args[3]) {
             pokemonObject = require(`../../assets/info/${PID}_${argss[0]}-${pokemonNameLower}.js`).info;
         }
 
         // Other Forms Shiny
-        else if (argss[1] && forms.includes(argss[1].toLowerCase()) && argss[0].toLowerCase() == 'shiny' && !argss[2] && !args[3]) {
+        else if (argss[1] && forms.includes(argss[1].toLowerCase()) == true && argss[0].toLowerCase() == 'shiny' && !argss[2] && !args[3]) {
             pokemonObject = require(`../../assets/info/${PID}_${argss[1]}-${pokemonNameLower}.js`).info;
         }
 
