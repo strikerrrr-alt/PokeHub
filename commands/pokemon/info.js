@@ -68,6 +68,17 @@ class InfoCommand extends Command {
             pokemonObject = require(`../../assets/info/${PID}_${pokemonNameLower}.js`).info;
             console.log('Regular Poke');
         }
+
+        // Other Forms
+        else if (forms.includes(argss[0].toLowerCase()) && argss[0].toLowerCase() != 'shiny' && !argss[2] && !args[3]) {
+            pokemonObject = require(`../../assets/info/${PID}_${argss[0]}-${pokemonNameLower}.js`).info;
+        }
+
+        // Other Forms Shiny
+        else if (argss[1] && forms.includes(argss[1].toLowerCase()) && argss[0].toLowerCase() == 'shiny' && !argss[2] && !args[3]) {
+            pokemonObject = require(`../../assets/info/${PID}_${argss[1]}-${pokemonNameLower}.js`).info;
+        }
+
         // Mega
         else if (argss[0].toLowerCase() != 'shiny' && argss[0].toLowerCase() == 'mega' && !argss[2] && !args[3]) {
             pokemonObject = require(`../../assets/info/${PID}_${argss[0]}-${pokemonNameLower}.js`).info;
@@ -90,16 +101,6 @@ class InfoCommand extends Command {
         else if (argss[3] && argss[3].toLowerCase() == 'x' || argss[3].toLowerCase() == 'y' && argss[0].toLowerCase() == 'shiny') {
             pokemonObject = require(`../../assets/info/${PID}_${argss[1]}-${pokemonNameLower}-${argss[3]}.js`).info;
             console.log('Shiny Mega X/Y');
-        }
-
-        // Other Forms
-        else if (forms.includes(argss[0].toLowerCase()) && argss[0].toLowerCase() != 'shiny' && !argss[2] && !args[3]) {
-            pokemonObject = require(`../../assets/info/${PID}_${argss[0]}-${pokemonNameLower}.js`).info;
-        }
-
-        // Other Forms Shiny
-        else if (argss[1] && forms.includes(argss[1].toLowerCase()) && argss[0].toLowerCase() == 'shiny' && !argss[2] && !args[3]) {
-            pokemonObject = require(`../../assets/info/${PID}_${argss[1]}-${pokemonNameLower}.js`).info;
         }
 
 
