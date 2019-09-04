@@ -1,0 +1,23 @@
+exports.info = {
+    'number': 47,
+    'species': '**Parasect** (**パラセクト** **Parasect**)',
+    'types' : 'Bug | Grass',
+    'pokedexEntry': 'The bug is mostly dead, with the mushroom on its back having become the main body. If the mushroom comes off, the bug stops moving. Its poisonous spores are also used in traditional medicine. Apparently, spores produced in Alola are not of very good quality.\n\n*Dex entry from USUM*',
+    'genderRatio': { M: 0.5, F: 0.5 },
+    'catchRate': { integer: 75, percentage: '17.5%' },
+    'baseStats': { hp: 60, atk: 95, def: 80, spAtk: 60, spDef: 80, spd: 30 },
+    'abilities': { 0: 'Effect Spore *or* Dry Skin', 'H': 'Damp' },
+    'height': 1.0,
+    'weight': 65.0,
+    'colorHex': '#FEC05D',
+    'colorHexShiny': '#FEED7A',
+    'color': 'Soft Orange',
+    'colorShiny': 'Soft Yellow',
+    'evolvesFrom': { species: 'Paras', level: '24', triggeredBy: 'Levelling Up' },
+    'eggGroups': ['Bug', 'Grass'],
+    'hatchTime': '5140 - 5396 steps',
+    'gif': 'https://play.pokemonshowdown.com/sprites/xyani/parasect.gif',
+    'gifShiny': 'https://play.pokemonshowdown.com/sprites/xyani-shiny/parasect.gif',
+    'legendary': false,
+    'mythical': false
+};
