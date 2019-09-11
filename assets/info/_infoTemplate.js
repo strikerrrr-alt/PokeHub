@@ -17,7 +17,7 @@ exports.info = {
     'evolvesTo': { species: 'PokemonName', level: '0', triggeredBy: 'Levelling Up' }, // If you need help with this, ask. I can correct you also if you're unsure.
     'eggGroups': ['Egg', 'Group'],
     'hatchTime': '100 - 1000 steps',
-    'gif': 'http://play.pokemonshowdown.com/sprites/xyani/pokemonName.gif', // Click on the URL to check
+    'gif': 'http://play.pokemonshowdown.com/sprites/xyani/pokemonName.gif', // Click on the URL to check once you replace
     'gifShiny': 'http://play.pokemonshowdown.com/sprites/xyani-shiny/pokemonName.gif',
     'legendary': false, // true OR false
     'mythical': false
