@@ -25,7 +25,7 @@
         "eol-last": "off",
         "no-console": "off",
         "no-floating-decimal": "error",
-        "no-inline-comments": "error",
+        "no-inline-comments": "off",
         "no-multi-spaces": "error",
         "no-multiple-empty-lines": ["error", {
             "max": 2,
