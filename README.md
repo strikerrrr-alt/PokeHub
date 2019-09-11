@@ -2,7 +2,7 @@
 
 Logo Here
 
-![](https://img.shields.io/github/stars/Strikerrr/PokeHub.svg) ![](https://img.shields.io/github/forks/Strikerrr/PokeHub.svg) ![](https://img.shields.io/github/release/Strikerrr/PokeHub.svg) ![](https://img.shields.io/github/issues/Strikerrr/PokeHub.svg)
+![](https://img.shields.io/github/stars/Strikerrr/PokeHub.svg) ![](https://img.shields.io/github/forks/Strikerrr/PokeHub.svg) ![](https://img.shields.io/github/issues/Strikerrr/PokeHub.svg)
 
 **Welcome to PokeHub!**
 The go-to, on the fly, compact Discord Bot for all your Pokemon needs.
